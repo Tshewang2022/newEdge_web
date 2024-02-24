@@ -13,8 +13,8 @@ const Navbar = () => {
     setOpen((prev) => !prev);
   };
   return (
-    <nav className="bg-white py-[10px] border-[2px] w-full">
-      <div className="flex justify-between items-center mx-[32px] sm:mx-[64px]">
+    <nav className="bg-white py-[10px] border-[2px] w-full px-[256px] max-xl:px-[32px] fixed top-0 z-10">
+      <div className="flex justify-between items-center ">
         {/* logo */}
         <img
           src="/assets/icons/logo.svg"
