@@ -17,7 +17,7 @@ module.exports = {
       },
     },
     extend: {
-      fontfamily: {
+      fontFamily: {
         sans: ["Josefin Sans", "sans-serif"],
         roboto: ["Roboto"],
       },

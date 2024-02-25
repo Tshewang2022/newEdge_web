@@ -1,3 +1,7 @@
+import { FaFacebookSquare } from "react-icons/fa";
+
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 const AboutUs = () => {
   return (
     <section className="mx-[256px] max-xl:mx-[32px]">
@@ -11,9 +15,21 @@ const AboutUs = () => {
           </h2>
         </div>
       </div>
-      <div className="my-[32px] flex justify-between items-center gap-[32px]">
+      <div className="flex justify-center items-center my-[64px]">
+        <div className="text-center">
+          <h2 className="text-[32px] leading-normal font-sans font-semibold">
+            Mission & Vision
+          </h2>
+          <p className="max-w-[640px]">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+            sapiente vel quas rerum autem debitis voluptatibus molestiae, nam a
+            perferendis!
+          </p>
+        </div>
+      </div>
+      {/* <div className="my-[32px] flex flex-col justify-between items-center gap-[32px] md:flex-row">
         <div className="w-1/3 flex justify-center items-center">
-          <div className="">
+          <div className="flex flex-col max-md:flex-row">
             <div>
               <h2 className="text-[32px] font-bold leading-[120%]">Mission</h2>
             </div>
@@ -26,7 +42,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div
-          className="w-[2px] bg-green-400 h-[150px]
+          className="w-[2px] bg-green-400 h-[150px] max-md:hidden
         "
         />
         <div className="w-2/3 px-[32px]">
@@ -43,43 +59,135 @@ const AboutUs = () => {
             facere?
           </div>
         </div>
-      </div>
-      <div className="my-[64px]">
+      </div> */}
+      <div className="my-[32px] py-[32px] bg-[#F5F5F7]">
         <div className="flex justify-center items-center">
           <h2 className="text-[32px] font-semibold">Meet our Team</h2>
         </div>
         <div>
           {/* === BOARD OF DIRECTORS */}
-          <div className="my-[32px]">
+          <div className="my-[16px]">
             <h4 className="text-[24px] font-medium">Board of Directors</h4>
-            <div className="grid grid-cols-4 gap-4">
-              <div className="bg-green-400 p-[16px]">
-                <div className="flex justify-center items-center">
-                  <img src="" alt="" />
-                  image
+            <div className="grid grid-cols-4 gap-[32px] max-md:grid-cols-1">
+              <div className="shadow-lg overflow-hidden rounded-md">
+                <div className="flex justify-center items-center mb-[32px]">
+                  <img src="/assets/images/profile.jpg" alt="" />
                 </div>
-                <p>name</p>
-                <p>position</p>
-                <div className="flex justify-center items-center">
-                  <p>fb</p>
-                  <p>linkedin</p>
-                  <p>twitter</p>
+                <p className="text-[16px] font-semibold text-center">
+                  Tshewang Gyaltshen
+                </p>
+                <p className="text-center">Junior developer</p>
+                <div className="flex justify-center items-center gap-[8px] py-[16px]">
+                  <FaFacebookSquare className="w-[24px] h-[24px]" />
+                  <FaInstagramSquare className="w-[24px] h-[24px]" />
+                  <FaSquareXTwitter className="w-[24px] h-[24px]" />
                 </div>
               </div>
-              <div className="bg-green-400">one</div>
-              <div className="bg-green-400">one</div>
-              <div className="bg-green-400">one</div>
+              <div className="shadow-lg overflow-hidden rounded-md">
+                <div className="flex justify-center items-center mb-[32px]">
+                  <img src="/assets/images/profile.jpg" alt="" />
+                </div>
+                <p className="text-[16px] font-semibold text-center">
+                  Tshewang Gyaltshen
+                </p>
+                <p className="text-center">Junior developer</p>
+                <div className="flex justify-center items-center gap-[8px] py-[16px]">
+                  <FaFacebookSquare className="w-[24px] h-[24px]" />
+                  <FaInstagramSquare className="w-[24px] h-[24px]" />
+                  <FaSquareXTwitter className="w-[24px] h-[24px]" />
+                </div>
+              </div>
+              <div className="shadow-lg overflow-hidden rounded-md">
+                <div className="flex justify-center items-center mb-[32px]">
+                  <img src="/assets/images/profile.jpg" alt="" />
+                </div>
+                <p className="text-[16px] font-semibold text-center">
+                  Tshewang Gyaltshen
+                </p>
+                <p className="text-center">Junior developer</p>
+                <div className="flex justify-center items-center gap-[8px] py-[16px]">
+                  <FaFacebookSquare className="w-[24px] h-[24px]" />
+                  <FaInstagramSquare className="w-[24px] h-[24px]" />
+                  <FaSquareXTwitter className="w-[24px] h-[24px]" />
+                </div>
+              </div>
+              <div className="shadow-lg overflow-hidden rounded-md">
+                <div className="flex justify-center items-center mb-[32px]">
+                  <img src="/assets/images/profile.jpg" alt="" />
+                </div>
+                <p className="text-[16px] font-semibold text-center">
+                  Tshewang Gyaltshen
+                </p>
+                <p className="text-center">Junior developer</p>
+                <div className="flex justify-center items-center gap-[8px] py-[16px]">
+                  <FaFacebookSquare className="w-[24px] h-[24px]" />
+                  <FaInstagramSquare className="w-[24px] h-[24px]" />
+                  <FaSquareXTwitter className="w-[24px] h-[24px]" />
+                </div>
+              </div>
             </div>
           </div>
 
           {/* === SOFTWARE TEAM */}
-          <div className="my-[32px]">
-            <h4>Software Team</h4>
-            <div className="grid grid-cols-4 gap-4">
-              <div className="bg-green-400">one</div>
-              <div className="bg-green-400">one</div>
-              <div className="bg-green-400">one</div>
-              <div className="bg-green-400">one</div>
+          <div className="my-[64px]">
+            <h4 className="text-[24px] font-medium">Software Team</h4>
+            <div className="grid grid-cols-4 gap-[32px] max-md:grid-cols-1">
+              <div className="shadow-lg overflow-hidden rounded-md">
+                <div className="flex justify-center items-center mb-[32px]">
+                  <img src="/assets/images/profile.jpg" alt="" />
+                </div>
+                <p className="text-[16px] font-semibold text-center">
+                  Tshewang Gyaltshen
+                </p>
+                <p className="text-center">Junior developer</p>
+                <div className="flex justify-center items-center gap-[8px] py-[16px]">
+                  <FaFacebookSquare className="w-[24px] h-[24px]" />
+                  <FaInstagramSquare className="w-[24px] h-[24px]" />
+                  <FaSquareXTwitter className="w-[24px] h-[24px]" />
+                </div>
+              </div>
+              <div className="shadow-lg overflow-hidden rounded-md">
+                <div className="flex justify-center items-center mb-[32px]">
+                  <img src="/assets/images/profile.jpg" alt="" />
+                </div>
+                <p className="text-[16px] font-semibold text-center">
+                  Tshewang Gyaltshen
+                </p>
+                <p className="text-center">Junior developer</p>
+                <div className="flex justify-center items-center gap-[8px] py-[16px]">
+                  <FaFacebookSquare className="w-[24px] h-[24px]" />
+                  <FaInstagramSquare className="w-[24px] h-[24px]" />
+                  <FaSquareXTwitter className="w-[24px] h-[24px]" />
+                </div>
+              </div>
+              <div className="shadow-lg overflow-hidden rounded-md">
+                <div className="flex justify-center items-center mb-[32px]">
+                  <img src="/assets/images/profile.jpg" alt="" />
+                </div>
+                <p className="text-[16px] font-semibold text-center">
+                  Tshewang Gyaltshen
+                </p>
+                <p className="text-center">Junior developer</p>
+                <div className="flex justify-center items-center gap-[8px] py-[16px]">
+                  <FaFacebookSquare className="w-[24px] h-[24px]" />
+                  <FaInstagramSquare className="w-[24px] h-[24px]" />
+                  <FaSquareXTwitter className="w-[24px] h-[24px]" />
+                </div>
+              </div>
+              <div className="shadow-lg overflow-hidden rounded-md">
+                <div className="flex justify-center items-center mb-[32px]">
+                  <img src="/assets/images/profile.jpg" alt="" />
+                </div>
+                <p className="text-[16px] font-semibold text-center">
+                  Tshewang Gyaltshen
+                </p>
+                <p className="text-center">Junior developer</p>
+                <div className="flex justify-center items-center gap-[8px] py-[16px]">
+                  <FaFacebookSquare className="w-[24px] h-[24px]" />
+                  <FaInstagramSquare className="w-[24px] h-[24px]" />
+                  <FaSquareXTwitter className="w-[24px] h-[24px]" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

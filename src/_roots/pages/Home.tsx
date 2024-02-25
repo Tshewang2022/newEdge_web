@@ -7,22 +7,22 @@ import { IoCloudUploadSharp } from "react-icons/io5";
 const Home = () => {
   return (
     <section className="mx-[256px] max-xl:mx-[32px]">
-      <div className="flex items-center justify-between max-md:flex-col">
+      <div className="flex items-center justify-between max-md:flex-col bg-[#F5F5F7] mt-[32px]">
         <div className="w-full flex justify-start items-center ">
-          <div className="">
+          <div className="px-[32px] max-md:px-[16px]">
             <h2 className="text-[32px] xl:text-[56px] font-bold font-sans leading-[150%] my-[32px] ">
               Best digital IT & tech <br /> solution to scale <br /> your
               business
             </h2>
-            <p className="text-[16px] font-medium leading-normal font-sans">
+            <p className="text-[16px] font-medium leading-normal font-sans text-[#717171]">
               We offer best services in Bhutan and outside the country. Customer
               first
             </p>
-            <div className="flex gap-[32px]">
-              <Button className="bg-[#6366F1] my-[16px] px-[24px] h-[56px]">
+            <div className="flex gap-[16px]">
+              <Button className="bg-[#6366F1] my-[16px] px-[32px] h-[56px]">
                 Learn more
               </Button>
-              <Button className="bg-[#6366F1] my-[16px] px-[24px] h-[56px]">
+              <Button className="bg-[#6366F1] my-[16px] px-[32px] h-[56px]">
                 Get started
               </Button>
             </div>
@@ -32,12 +32,36 @@ const Home = () => {
           <img src="/assets/images/home.png" alt="" className="w-full " />
         </div>
       </div>
-      <div className="flex justify-center items-center bg-slate-200">
-        <div className="w-1/2 flex justify-center items-center">
+      <div>
+        {/* ===SHOULD BE STORED IN THE CONTANTS === */}{" "}
+        <h2 className="text-[24px] font-semibold leading-normal ">
+          Trusted by
+        </h2>
+        <div className="flex flex-col justify-between items-center md:flex-row gap-[16px] mb-[64px]">
+          <div className="flex justify-center items-center bg-slate-400 w-full h-[56px] rounded-md">
+            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+          </div>
+          <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
+            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+          </div>
+          <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
+            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+          </div>
+          <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
+            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+          </div>
+          <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
+            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+          </div>
+        </div>
+      </div>
+      {/* <hr className="bg-gray-700 h-[2px] w-full border-[1px]" /> */}
+      <div className="flex justify-center items-center">
+        <div className="w-1/2 flex justify-center items-center p-[16px]">
           <img
             src="/assets/images/projects.png"
             alt=""
-            className="w-full bg-no-repeat bg-cover"
+            className="w-full bg-no-repeat bg-cover group-hover:scale-110 duration-100"
           />
         </div>
         <div className="flex justify-center items-center w-1/2">
@@ -45,19 +69,18 @@ const Home = () => {
             <h2 className="text-[46px] font-bold pb-[32px]">
               Our recent projects
             </h2>
-            <li className="text-[16px] font-medium leading-[120%] pb-[16px] ">
+            <li className="text-[24px] font-medium leading-[120%] pb-[16px] px-[16px]">
               ECMS for the Minstry of Educations
             </li>
-            <li className="text-[16px] font-medium leading-[120%] pb-[32px] ">
+            <li className="text-[24px] font-medium leading-[120%] pb-[32px] px-[16px] ">
               CPMS for Royal Bhutan police
             </li>
-            <Button className="h-[56px] px-[30px] mt-[32px]">Learn more</Button>
+            <Button className="h-[56px] w-[210px] mt-[32px]">Learn more</Button>
           </div>
         </div>
       </div>
-      <div>trusted by</div>
 
-      <section className="my-[32px]">
+      <section className="my-[32px] ">
         <div className="flex justify-center items-center">
           <h2 className="text-[24px] font-semibold md:text-[32px]">
             Why you should work with us?
@@ -69,9 +92,9 @@ const Home = () => {
             the sake of all the humans around the world
           </p>
         </div>
-        <div className="flex justify-between items-center ">
+        <div className="flex justify-between items-center p-[32px] bg-slate-200 rounded-md mt-[16px]">
           <div className="w-full justify-center">
-            <div className="flex justify-center items-center text-[32px] font-semibold py-[64px]">
+            <div className="flex justify-center items-center text-[32px] font-semibold py-[32px]">
               <h2>Benefits for we provide</h2>
             </div>
             <div className="flex justify-between items-center gap-[16px]">

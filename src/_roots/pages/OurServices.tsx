@@ -32,22 +32,17 @@ const OurServices = () => {
             Services
           </h2>
         </div>
-        <div className="flex justify-between item-center gap-[32px] pb-[32px]">
+        <div className="md:flex max-md:justify-between flex-1 item-center gap-[32px] pb-[32px]">
           <div>
             <div className="flex justify-center items-center mb-[8px]">
               <FaNetworkWired className="w-[46px] h-[46px]" />
             </div>
-
-            <div className="flex justify-center items-center">
-              <h4 className="text-[16px] font-medium">Networking</h4>
-            </div>
-            <div className="flex justify-center items-center">
-              <p className="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                laborum quaerat cupiditate rerum enim. A facere consequuntur
-                distinctio impedit eaque!
-              </p>
-            </div>
+            <h4 className="text-[16px] font-medium text-center">Networking</h4>
+            <p className="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              laborum quaerat cupiditate rerum enim. A facere consequuntur
+              distinctio impedit eaque!
+            </p>
           </div>
           <div>
             <div className="flex justify-center items-center mb-[8px]">
@@ -57,7 +52,7 @@ const OurServices = () => {
               Application development
             </h4>
             <div>
-              <p className="">
+              <p className="text-center">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
                 recusandae minus officia blanditiis? Omnis et dignissimo
               </p>
@@ -67,58 +62,61 @@ const OurServices = () => {
             <div className="flex justify-center items-center mb-[8px]">
               <IoMdSettings className="w-[46px] h-[46px]" />
             </div>
-            <div className="flex justify-center items-center">
-              <h4 className="text-[16px] font-medium ">Sytem intergrations</h4>
-            </div>
-            <div className="flex justify-center items-center">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                in itaque, eos doloremque exercitationem quo
-              </p>
-            </div>
+            <h4 className="text-[16px] font-medium text-center">
+              Sytem intergrations
+            </h4>
+            <p className="text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae in
+              itaque, eos doloremque exercitationem quo
+            </p>
           </div>
           <div>
             <div className="flex justify-center items-center mb-[8px]">
               <FaCloudDownloadAlt className="w-[46px] h-[46px]" />
             </div>
-            <div className="flex justify-center items-center">
-              <h4 className="text-[16px] font-medium">Server & Storage</h4>
-            </div>
-            <div className="flex justify-center items-center mb-[8px]">
-              <p className="text-justify">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                ratione temporibus soluta deserunt! Fuga aspernatur dolorum
-                nemo, molestias eaque architecto.
-              </p>
-            </div>
+            <h4 className="text-[16px] font-medium text-center">
+              Server & Storage
+            </h4>
+            <p className="text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+              ratione temporibus soluta deserunt! Fuga aspernatur dolorum nemo,
+              molestias eaque architecto.
+            </p>
           </div>
         </div>
 
         {/* === COLLOBORATE === */}
-        <div className="my-[32px]">
+        <div className="my-[32px] bg-slate-200 p-[32px]">
           <div className="flex justify-center items-center">
             <h2 className="text-[32px] font-medium leading-[120%]">
               Want to colloborate with us?
             </h2>
           </div>
           <div className="flex justify-between items-center">
-            <div className="text-[16px] font-medium w-1/3">
-              <div className="flex items-center px-[16px] h-[56px] mb-[8px] bg-slate-200 w-full">
+            <div className="text-[16px] font-medium w-1/2 max-md:flex">
+              <div className="items-center px-[16px] py-[16px] bg-blue-200 mb-[32px] w-full shadow-lg">
                 <h2 className="">Networking</h2>
               </div>
-              <div className="flex items-center px-[16px] h-[56px] mb-[8px] bg-slate-200 ">
+              <div className="flex items-center px-[16px] h-[56px] mb-[32px] bg-slate-300 shadow-lg">
                 <h2 className="">Application development</h2>
               </div>
-              <div className="flex items-center px-[16px] h-[56px] mb-[8px] bg-slate-200 ">
+              <div className="flex items-center px-[16px] h-[56px] mb-[32px] bg-slate-300 shadow-lg">
                 <h2 className="py-[16px]">System integrations</h2>
               </div>
-              <div className="flex items-center px-[16px] h-[56px] mb-[8px] bg-slate-200">
+              <div className="flex items-center px-[16px] h-[56px] mb-[32px] bg-slate-300 shadow-lg">
                 <h2 className="py-[16px]">Server & Storage</h2>
               </div>
             </div>
-            <div className="flex justify-center items-center">
-              <div>
+            <div className="flex justify-center items-center w-1/2 ">
+              <div className="px-[32px]">
                 <img src="/assets/images/ux.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  blanditiis provident reiciendis officiis nihil saepe iste
+                  perferendis nam impedit cum architecto, sunt inventore nulla
+                  aspernatur dolorum, quaerat aliquid. Harum, adipisci.
+                </p>
+                <Button className="shadow-lg bg-[#53dbdb]">Learn more</Button>
               </div>
             </div>
           </div>

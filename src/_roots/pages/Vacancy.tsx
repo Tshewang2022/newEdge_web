@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaSquareFacebook, FaSquareTwitter } from "react-icons/fa6";
 
 const Vacancy = () => {
   return (
@@ -70,48 +72,129 @@ const Vacancy = () => {
           </div>
         </div>
       </div>
+
       {/* === LATEST UPDATES */}
       <div className="my-[32px]">
         <div className="flex justify-center items-center">
-          <h2 className="text-[32px] font-semibold">latest Updates</h2>
+          <h2 className="text-[32px] font-medium font-roboto leading-normal">
+            latest Updates
+          </h2>
         </div>
-        <div className="flex justify-between items-center gap-[16px]">
-          <div className="w-full">
-            <h4>The section is the seconds</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              expedita, fugiat error, aliquid repellat perferendis harum
-              explicabo in libero quasi autem ex iure corrupti ducimus
-              cupiditate ad voluptatibus nesciunt enim. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Vel eveniet exercitationem
-            </p>
-            <img src="/assets/images/data.jpg" alt="" />
-          </div>
-          <div className="w-full">
-            <div className="flex">
-              <div className="w-1/2">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates ab nemo velit amet, autem reiciendis incidunt enim
-                  ea nam molestias! Lorem, ipsum dolor sit amet consectetur
-                  adipisicing elit. Quod delectus, quis dolorem temporibus
+
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full sm:w-2/3">
+            <div className="flex mb-[16px]">
+              <img
+                src="/assets/images/update.jpg"
+                alt=""
+                className="w-[250px] h-[200px]"
+              />
+              <div className="px-[16px]">
+                <h2 className="font-sans leading-normal text-[16px] font-semibold">
+                  Shortage workers in Bhutan
+                </h2>
+                <h4 className="text-[14px] pt-[8px]">February 10th, 2024</h4>
+                <p className="line-clamp-4 text-[#717171] pt-[14px]">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Iusto incidunt cumque impedit vero repellendus architecto,
+                  assumenda aperiam. Ipsum praesentium ipsa, officia suscipit
+                  vel doloribus voluptatem quaerat quo? Repellendus, quidem
+                  exercitationem.
                 </p>
-              </div>
-              <div>
-                <img src="/assets/images/ux.png" alt="" className="w-[200px]" />
               </div>
             </div>
-            <div className="flex items-center">
-              <div className="w-1/2">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates ab nemo velit amet, autem reiciendis incidunt enim
-                  ea nam molestias! Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Reiciendis ab recusandae molestias,
+            <div className="border-l bg-gray-300 h-[2px] mr-[16px]"></div>
+            <div className="flex my-[16px]">
+              <img
+                src="/assets/images/update.jpg"
+                alt="news"
+                className="w-[250px] h-[200px]"
+              />
+              <div className="px-[16px]">
+                <h2 className="font-sans leading-normal text-[16px] font-semibold">
+                  Shortage workers in Bhutan
+                </h2>
+                <h4 className="text-[14px] pt-[8px]">February 10th, 2024</h4>
+                <p className="line-clamp-4 text-[#717171] pt-[14px]">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Iusto incidunt cumque impedit vero repellendus architecto,
+                  assumenda aperiam. Ipsum praesentium ipsa, officia suscipit
+                  vel doloribus voluptatem quaerat quo? Repellendus, quidem
+                  exercitationem.
                 </p>
               </div>
+            </div>
+            <div className="border-l bg-gray-300 h-[2px] mr-[16px]"></div>
+            <div className="flex my-[16px]">
+              <img
+                src="/assets/images/update.jpg"
+                alt=""
+                className="w-[250px] h-[200px]"
+              />
+              <div className="px-[16px]">
+                <h2 className="font-sans leading-normal text-[16px] font-semibold">
+                  Shortage workers in Bhutan
+                </h2>
+                <h4 className="text-[14px] pt-[8px]">February 10th, 2024</h4>
+                <p className="line-clamp-4 text-[#717171] pt-[14px]">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Iusto incidunt cumque impedit vero repellendus architecto,
+                  assumenda aperiam. Ipsum praesentium ipsa, officia suscipit
+                  vel doloribus voluptatem quaerat quo? Repellendus, quidem
+                  exercitationem.
+                </p>
+              </div>
+            </div>
+            <div className="border-l bg-gray-300 h-[2px] mr-[16px]"></div>
+          </div>
+          <hr className="w-[2px] rounded-md bg-gray-300 h-[690px] max-sm:hidden" />
+
+          {/* Social icons sections */}
+          <div className="w-full sm:w-1/3">
+            <div className="px-[16px]">
+              <div className="social_icons">
+                <h1 className="font-sans text-light text-[16px] ">FOLLOW US</h1>
+                <div className="border-l bg-gray-300 h-[2px]"></div>
+                <div className="flex gap-[8px] my-[8px]">
+                  <FaSquareFacebook className="w-[24px] h-[24px]" />
+                  <p className="text-[16px] font-sans">FACEBOOK</p>
+                </div>
+                <div className="border-l bg-gray-300 h-[2px]"></div>
+                <div className="flex gap-[8px] my-[8px]">
+                  <FaInstagramSquare className="w-[24px] h-[24px]" />
+                  <p className="text-[16px] font-sans">INSTRAGRAM</p>
+                </div>
+                <div className="border-l bg-gray-300 h-[3px]"></div>
+                <div className="flex gap-[8px] my-[8px]">
+                  <FaSquareTwitter className="w-[24px] h-[24px]" />
+                  <p className="text-[16px] font-sans">TWITTER</p>
+                </div>
+              </div>
+
               <div>
-                <img src="/assets/images/ux.png" alt="" className="w-[200px]" />
+                <button className="bg-btn py-[8px] px-[24px] rounded-md text-white font-sans my-[8px]">
+                  Vacancy
+                </button>
+                <p className="text-[14px] font-sans leading-[120%] line-clamp-4 mb-[8px] underline hover:cursor-pointer font-semibold">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quis, sed. Veniam ducimus cum eum facilis adipisci delectus
+                  vitae? Et voluptatem exercitationem laudantium ratione porro
+                  sed quam aliquam obcaecati cumque dignissimos! Lorem ipsum
+                  dolor sit, amet consectetur adipisicing elit. Quis, sed.
+                  Veniam ducimus cum eum facilis adipisci delectus vitae? Et
+                  voluptatem exercitationem laudantium ratione porro sed quam
+                  aliquam obcaecati cumque dignissimos!
+                </p>
+                <p className="text-[14px] font-sans leading-[120%] line-clamp-4 underline hover:cursor-pointer font-semibold">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quis, sed. Veniam ducimus cum eum facilis adipisci delectus
+                  vitae? Et voluptatem exercitationem laudantium ratione porro
+                  sed quam aliquam obcaecati cumque dignissimos! Lorem ipsum
+                  dolor sit, amet consectetur adipisicing elit. Quis, sed.
+                  Veniam ducimus cum eum facilis adipisci delectus vitae? Et
+                  voluptatem exercitationem laudantium ratione porro sed quam
+                  aliquam obcaecati cumque dignissimos!
+                </p>
               </div>
             </div>
           </div>
