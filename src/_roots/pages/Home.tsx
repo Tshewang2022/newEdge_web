@@ -32,6 +32,29 @@ const Home = () => {
           <img src="/assets/images/home.png" alt="" className="w-full " />
         </div>
       </div>
+      <div className="flex justify-center items-center bg-slate-200">
+        <div className="w-1/2 flex justify-center items-center">
+          <img
+            src="/assets/images/projects.png"
+            alt=""
+            className="w-full bg-no-repeat bg-cover"
+          />
+        </div>
+        <div className="flex justify-center items-center w-1/2">
+          <div>
+            <h2 className="text-[46px] font-bold pb-[32px]">
+              Our recent projects
+            </h2>
+            <li className="text-[16px] font-medium leading-[120%] pb-[16px] ">
+              ECMS for the Minstry of Educations
+            </li>
+            <li className="text-[16px] font-medium leading-[120%] pb-[32px] ">
+              CPMS for Royal Bhutan police
+            </li>
+            <Button className="h-[56px] px-[30px] mt-[32px]">Learn more</Button>
+          </div>
+        </div>
+      </div>
       <div>trusted by</div>
 
       <section className="my-[32px]">
@@ -46,7 +69,7 @@ const Home = () => {
             the sake of all the humans around the world
           </p>
         </div>
-        <div className="flex justify-between items-center my-[64px]">
+        <div className="flex justify-between items-center ">
           <div className="w-full justify-center">
             <div className="flex justify-center items-center text-[32px] font-semibold py-[64px]">
               <h2>Benefits for we provide</h2>
