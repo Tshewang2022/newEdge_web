@@ -10,7 +10,7 @@ const Home = () => {
       <div className="flex items-center justify-between max-md:flex-col bg-[#F5F5F7] mt-[32px]">
         <div className="w-full flex justify-start items-center ">
           <div className="px-[32px] max-md:px-[16px]">
-            <h2 className="text-[32px] xl:text-[56px] font-bold font-sans leading-[150%] my-[32px] ">
+            <h2 className="text-[32px] xl:text-[56px] font-bold font-roboto leading-[150%] my-[32px] ">
               Best digital IT & tech <br /> solution to scale <br /> your
               business
             </h2>
@@ -34,7 +34,7 @@ const Home = () => {
       </div>
       <div>
         {/* ===SHOULD BE STORED IN THE CONTANTS === */}{" "}
-        <h2 className="text-[24px] font-semibold leading-normal ">
+        <h2 className="text-[24px] font-semibold leading-normal font-roboto">
           Trusted by
         </h2>
         <div className="flex flex-col justify-between items-center md:flex-row gap-[16px] mb-[64px]">
@@ -57,7 +57,7 @@ const Home = () => {
       </div>
       {/* <hr className="bg-gray-700 h-[2px] w-full border-[1px]" /> */}
       <div className="flex justify-center items-center">
-        <div className="w-1/2 flex justify-center items-center p-[16px]">
+        <div className="w-1/2 flex justify-center items-center p-[16px] max-md:hidden">
           <img
             src="/assets/images/projects.png"
             alt=""
@@ -66,13 +66,13 @@ const Home = () => {
         </div>
         <div className="flex justify-center items-center w-1/2">
           <div>
-            <h2 className="text-[46px] font-bold pb-[32px]">
+            <h2 className="text-[32px] font-bold pb-[32px] font-roboto">
               Our recent projects
             </h2>
-            <li className="text-[24px] font-medium leading-[120%] pb-[16px] px-[16px]">
+            <li className="text-[24px] font-medium leading-[120%] pb-[16px] px-[16px] font-sans">
               ECMS for the Minstry of Educations
             </li>
-            <li className="text-[24px] font-medium leading-[120%] pb-[32px] px-[16px] ">
+            <li className="text-[24px] font-medium leading-[120%] pb-[32px] px-[16px] font-sans">
               CPMS for Royal Bhutan police
             </li>
             <Button className="h-[56px] w-[210px] mt-[32px]">Learn more</Button>
@@ -82,12 +82,12 @@ const Home = () => {
 
       <section className="my-[32px] ">
         <div className="flex justify-center items-center">
-          <h2 className="text-[24px] font-semibold md:text-[32px]">
+          <h2 className="text-[24px] font-semibold md:text-[32px] font-roboto">
             Why you should work with us?
           </h2>
         </div>
         <div className="flex justify-center items-center">
-          <p className="text-[16px] font-normal leading normal">
+          <p className="text-[16px] font-normal leading normal font-sans">
             We offer 6 months of free support for the life of the Tech, and for
             the sake of all the humans around the world
           </p>
@@ -95,36 +95,36 @@ const Home = () => {
         <div className="flex justify-between items-center p-[32px] bg-slate-200 rounded-md mt-[16px]">
           <div className="w-full justify-center">
             <div className="flex justify-center items-center text-[32px] font-semibold py-[32px]">
-              <h2>Benefits for we provide</h2>
+              <h2 className="font-roboto ">Benefits we provide</h2>
             </div>
-            <div className="flex justify-between items-center gap-[16px]">
-              <div className="w-full">
+            <div className="flex justify-between items-center max-md:flex-col">
+              <div className="w-full px-[16px]">
                 <GoGraph className="w-[32px] h-[32px]" color="#53dbdb" />
-                <h4 className="text-[16px] font-semibold py-[10px]">
+                <h4 className="text-[16px] font-semibold py-[10px] font-sans">
                   Analytical App
                 </h4>
-                <p>
+                <p className="font-sans">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Voluptatibus, facere!
                 </p>
               </div>
-              <div className="w-full">
+              <div className="w-full px-[16px]">
                 <IoSettingsSharp
                   className="w-[32px] h-[32px]"
                   color="#53dbdb"
                 />
-                <h4 className="text-[16px] font-semibold py-[10px]">
+                <h4 className="text-[16px] font-semibold py-[10px] font-sans">
                   Analytical App
                 </h4>
-                <p>
+                <p className="font-sans">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Voluptatibus, facere!
                 </p>
               </div>
             </div>
             {/* === SECOND ONE === */}
-            <div className="flex justify-between items-center py-[64px] gap-[16px]">
-              <div className="w-full">
+            <div className="flex justify-between items-center py-[64px] gap-[16px] max-md:flex-col">
+              <div className="w-full px-[16px]">
                 <IoShieldCheckmark
                   className="w-[32px] h-[32px]"
                   color="#53dbdb"
@@ -137,7 +137,7 @@ const Home = () => {
                   Voluptatibus, facere!
                 </p>
               </div>
-              <div className="w-full">
+              <div className="w-full px-[16px]">
                 <IoCloudUploadSharp
                   className="w-[32px] h-[32px]"
                   color="#53dbdb"
@@ -152,7 +152,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex w-full justify-center">
+          <div className="flex w-full justify-center max-md:hidden">
             <div className="">
               <img src="/assets/images/data.jpg" alt="" />
             </div>

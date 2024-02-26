@@ -11,8 +11,10 @@ const Vacancy = () => {
         style={{ backgroundImage: `url('/assets/images/team.jpg')` }}
       >
         <div className="px-[32px]">
-          <h2 className="text-[46px] font-bold text-white">Join our Team</h2>
-          <p className="text-white">
+          <h2 className="text-[46px] font-bold text-white font-roboto">
+            Join our Team
+          </h2>
+          <p className="text-white font-sans leading-[120%]">
             Our team has amazing culture and awesome people that <br /> we need
             to have in the country for the love of the people
           </p>
@@ -20,52 +22,51 @@ const Vacancy = () => {
       </div>
 
       <div className="flex justify-center items-center mb-[16px]">
-        <h2 className="text-[32px] leading-normal font-medium">Vacancy</h2>
+        <h2 className="text-[32px] leading-normal font-roboto font-semibold">
+          Vacancy
+        </h2>
       </div>
       <div className="">
-        <div className="bg-slate-300 py-[32px] px-[32px] rounded-md mb-[16px] flex justify-between items-center">
+        <div className="bg-slate-300 py-[32px] px-[32px] rounded-md mb-[16px] flex justify-between items-center max-md:flex-col">
           <div>
-            <h4 className="text-[24px] font-medium">
+            <h4 className="text-[24px] font-medium font-sans">
               Fontend developer, with minimum of 5 years experience
             </h4>
-            <p>
+            <p className="font-sans text-[16px]">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
               quibusdam suscipit pariatur similique labore. Facere iste dicta
               voluptas eaque quibusdam?
             </p>
-            <p>Type of employment</p>
           </div>
           <div>
             <Button>Apply</Button>
           </div>
         </div>
-        <div className="bg-slate-300 py-[32px] px-[32px] rounded-md mb-[16px] flex justify-between items-center">
+        <div className="bg-slate-300 py-[32px] px-[32px] rounded-md mb-[16px] flex justify-between items-center max-md:flex-col">
           <div>
-            <h4 className="text-[24px] font-medium">
+            <h4 className="text-[24px] font-medium font-sans">
               Fontend developer, with minimum of 5 years experience
             </h4>
-            <p>
+            <p className="text-[16px] font-sans ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
               quibusdam suscipit pariatur similique labore. Facere iste dicta
               voluptas eaque quibusdam?
             </p>
-            <p>Type of employment</p>
           </div>
           <div>
             <Button>Apply</Button>
           </div>
         </div>
-        <div className="bg-slate-300 py-[32px] px-[32px] rounded-md mb-[16px] flex justify-between items-center">
-          <div>
-            <h4 className="text-[24px] font-medium">
+        <div className="bg-slate-300 py-[32px] px-[32px] rounded-md mb-[16px] flex justify-between items-center max-md:flex-col">
+          <div className="">
+            <h4 className="text-[24px] font-medium font-sans">
               Fontend developer, with minimum of 5 years experience
             </h4>
-            <p>
+            <p className="text-[16px] font-sans">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
               quibusdam suscipit pariatur similique labore. Facere iste dicta
               voluptas eaque quibusdam?
             </p>
-            <p>Type of employment</p>
           </div>
           <div>
             <Button>Apply</Button>
@@ -83,11 +84,11 @@ const Vacancy = () => {
 
         <div className="flex flex-col md:flex-row">
           <div className="w-full sm:w-2/3">
-            <div className="flex mb-[16px]">
+            <div className="flex mb-[16px] max-md:flex-col">
               <img
                 src="/assets/images/update.jpg"
                 alt=""
-                className="w-[250px] h-[200px]"
+                className="w-[250px] h-[200px] max-md:w-full"
               />
               <div className="px-[16px]">
                 <h2 className="font-sans leading-normal text-[16px] font-semibold">
@@ -104,11 +105,11 @@ const Vacancy = () => {
               </div>
             </div>
             <div className="border-l bg-gray-300 h-[2px] mr-[16px]"></div>
-            <div className="flex my-[16px]">
+            <div className="flex my-[16px] max-md:flex-col">
               <img
                 src="/assets/images/update.jpg"
                 alt="news"
-                className="w-[250px] h-[200px]"
+                className="w-[250px] h-[200px] max-md:w-full"
               />
               <div className="px-[16px]">
                 <h2 className="font-sans leading-normal text-[16px] font-semibold">
@@ -125,17 +126,19 @@ const Vacancy = () => {
               </div>
             </div>
             <div className="border-l bg-gray-300 h-[2px] mr-[16px]"></div>
-            <div className="flex my-[16px]">
+            <div className="flex my-[16px] max-md:flex-col">
               <img
                 src="/assets/images/update.jpg"
                 alt=""
-                className="w-[250px] h-[200px]"
+                className="w-[250px] h-[200px] max-md:w-full"
               />
               <div className="px-[16px]">
                 <h2 className="font-sans leading-normal text-[16px] font-semibold">
                   Shortage workers in Bhutan
                 </h2>
-                <h4 className="text-[14px] pt-[8px]">February 10th, 2024</h4>
+                <h4 className="text-[14px] pt-[8px] font-sans">
+                  February 10th, 2024
+                </h4>
                 <p className="line-clamp-4 text-[#717171] pt-[14px]">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Iusto incidunt cumque impedit vero repellendus architecto,

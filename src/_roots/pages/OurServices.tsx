@@ -13,8 +13,10 @@ const OurServices = () => {
       >
         <div className="px-[32px] max-sm:px-[10px]">
           {/* their should be the images as the background */}
-          <h2 className="text-white text-[48px] font-semibold">Our Services</h2>
-          <p className="text-white pb-[32px]">
+          <h2 className="text-white text-[48px] font-semibold font-roboto">
+            Our Services
+          </h2>
+          <p className="text-white pb-[32px] font-sans">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt,
             delectus.
             <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.

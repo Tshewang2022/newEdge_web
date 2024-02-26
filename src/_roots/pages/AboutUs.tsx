@@ -17,10 +17,10 @@ const AboutUs = () => {
       </div>
       <div className="flex justify-center items-center my-[64px]">
         <div className="text-center">
-          <h2 className="text-[32px] leading-normal font-sans font-semibold">
+          <h2 className="text-[32px] leading-normal font-semibold font-roboto">
             Mission & Vision
           </h2>
-          <p className="max-w-[640px]">
+          <p className="max-w-[640px] font-sans">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
             sapiente vel quas rerum autem debitis voluptatibus molestiae, nam a
             perferendis!
@@ -62,12 +62,16 @@ const AboutUs = () => {
       </div> */}
       <div className="my-[32px] py-[32px] bg-[#F5F5F7]">
         <div className="flex justify-center items-center">
-          <h2 className="text-[32px] font-semibold">Meet our Team</h2>
+          <h2 className="text-[32px] font-semibold font-roboto">
+            Meet our Team
+          </h2>
         </div>
         <div>
           {/* === BOARD OF DIRECTORS */}
           <div className="my-[16px]">
-            <h4 className="text-[24px] font-medium">Board of Directors</h4>
+            <h4 className="text-[24px] font-medium font-sans">
+              Board of Directors
+            </h4>
             <div className="grid grid-cols-4 gap-[32px] max-md:grid-cols-1">
               <div className="shadow-lg overflow-hidden rounded-md">
                 <div className="flex justify-center items-center mb-[32px]">
@@ -87,10 +91,10 @@ const AboutUs = () => {
                 <div className="flex justify-center items-center mb-[32px]">
                   <img src="/assets/images/profile.jpg" alt="" />
                 </div>
-                <p className="text-[16px] font-semibold text-center">
+                <p className="text-[16px] font-semibold text-center font-sans">
                   Tshewang Gyaltshen
                 </p>
-                <p className="text-center">Junior developer</p>
+                <p className="text-center font-sans">Junior developer</p>
                 <div className="flex justify-center items-center gap-[8px] py-[16px]">
                   <FaFacebookSquare className="w-[24px] h-[24px]" />
                   <FaInstagramSquare className="w-[24px] h-[24px]" />
@@ -101,10 +105,10 @@ const AboutUs = () => {
                 <div className="flex justify-center items-center mb-[32px]">
                   <img src="/assets/images/profile.jpg" alt="" />
                 </div>
-                <p className="text-[16px] font-semibold text-center">
+                <p className="text-[16px] font-semibold text-center font-sans">
                   Tshewang Gyaltshen
                 </p>
-                <p className="text-center">Junior developer</p>
+                <p className="text-center font-sans">Junior developer</p>
                 <div className="flex justify-center items-center gap-[8px] py-[16px]">
                   <FaFacebookSquare className="w-[24px] h-[24px]" />
                   <FaInstagramSquare className="w-[24px] h-[24px]" />
@@ -115,10 +119,10 @@ const AboutUs = () => {
                 <div className="flex justify-center items-center mb-[32px]">
                   <img src="/assets/images/profile.jpg" alt="" />
                 </div>
-                <p className="text-[16px] font-semibold text-center">
+                <p className="text-[16px] font-semibold text-center font-sans">
                   Tshewang Gyaltshen
                 </p>
-                <p className="text-center">Junior developer</p>
+                <p className="text-center font-sans">Junior developer</p>
                 <div className="flex justify-center items-center gap-[8px] py-[16px]">
                   <FaFacebookSquare className="w-[24px] h-[24px]" />
                   <FaInstagramSquare className="w-[24px] h-[24px]" />
@@ -130,7 +134,7 @@ const AboutUs = () => {
 
           {/* === SOFTWARE TEAM */}
           <div className="my-[64px]">
-            <h4 className="text-[24px] font-medium">Software Team</h4>
+            <h4 className="text-[24px] font-medium font-sans">Software Team</h4>
             <div className="grid grid-cols-4 gap-[32px] max-md:grid-cols-1">
               <div className="shadow-lg overflow-hidden rounded-md">
                 <div className="flex justify-center items-center mb-[32px]">
