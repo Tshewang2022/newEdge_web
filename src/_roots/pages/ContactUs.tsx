@@ -3,19 +3,19 @@ import { FaMailBulk } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 const ContactUs = () => {
   // 1. Define your form.
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: "",
-    },
-  });
+  // const form = useForm<z.infer<typeof formSchema>>({
+  //   resolver: zodResolver(formSchema),
+  //   defaultValues: {
+  //     username: "",
+  //   },
+  // });
 
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
+  // // 2. Define a submit handler.
+  // function onSubmit(values: z.infer<typeof formSchema>) {
+  //   // Do something with the form values.
+  //   // ✅ This will be type-safe and validated.
+  //   console.log(values);
+  // }
   return (
     <section>
       <div className="flex justify-center items-center py-[100px] min-h-screen gap-[32px]">
@@ -87,7 +87,7 @@ const ContactUs = () => {
         </div>
         <div>
           {/* === SHADCN FORM, CONTACT-US FORM === */}
-          <Form {...form}>
+          {/* <Form {...form}>
             <div className="sm:w-420 flex-container flex-col">
               <img src="/assets/images/logo.svg" alt="" />
 
@@ -148,7 +148,7 @@ const ContactUs = () => {
                 </div>
               </form>
             </div>
-          </Form>
+          </Form> */}
         </div>
       </div>
     </section>

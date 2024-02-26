@@ -31,7 +31,7 @@ const Navbar = () => {
                 <NavLink
                   to={link.route}
                   className={`${
-                    isActive && "bg-blue-500 px-[10px] py-[10px] rounded-md"
+                    isActive && "underline px-[10px] py-[10px] rounded-md"
                   }`}
                 >
                   {link.label}

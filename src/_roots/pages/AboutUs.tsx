@@ -10,7 +10,7 @@ const AboutUs = () => {
         style={{ backgroundImage: `url('/assets/images/technology.jpg')` }}
       >
         <div className="flex justify-center items-center">
-          <h2 className="text-[56px] font-bold leading-normal">
+          <h2 className="text-[56px] font-bold leading-normal font-roboto">
             About Newedge
           </h2>
         </div>
