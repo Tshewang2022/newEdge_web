@@ -39,10 +39,10 @@ const Home = () => {
         </h2>
         <div className="flex flex-col justify-between items-center md:flex-row gap-[16px] mb-[64px]">
           <div className="flex justify-center items-center bg-slate-400 w-full h-[56px] rounded-md">
-            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+            <h4 className="text-[16px] font-medium text-white">Microsoft</h4>
           </div>
           <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
-            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+            <h4 className="text-[16px] font-medium text-white">Cisco</h4>
           </div>
           <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
             <h4 className="text-[16px] font-medium text-white">airbnb</h4>
