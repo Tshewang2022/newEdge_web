@@ -1,16 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { IoSettingsSharp } from "react-icons/io5";
 import { GoGraph } from "react-icons/go";
-import { IoShieldCheckmark } from "react-icons/io5";
-import { IoCloudUploadSharp } from "react-icons/io5";
+import { FaMedal } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <section className="mx-[256px] max-xl:mx-[32px]">
-      <div className="flex items-center justify-between max-md:flex-col bg-[#F5F5F7] mt-[32px]">
+    <section className="">
+      <div className="flex items-center justify-between max-md:flex-col mt-[32px]">
         <div className="w-full flex justify-start items-center ">
           <div className="px-[32px] max-md:px-[16px]">
-            <h2 className="text-[32px] xl:text-[56px] font-bold font-roboto leading-[150%] my-[32px] ">
+            <h2 className="text-[32px] xl:text-[56px] font-bold font-roboto leading-[150%] my-[32px] text-white">
               Best digital IT & tech <br /> solution to scale <br /> your
               business
             </h2>
@@ -80,25 +79,64 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="my-[32px] ">
-        <div className="flex justify-center items-center">
-          <h2 className="text-[24px] font-semibold md:text-[32px] font-roboto">
-            Why you should work with us?
-          </h2>
-        </div>
-        <div className="flex justify-center items-center">
-          <p className="text-[16px] font-normal leading normal font-sans">
-            We offer 6 months of free support for the life of the Tech, and for
-            the sake of all the humans around the world
-          </p>
+      <section className="my-[32px] bg-[#FFFFFF">
+        <div className="flex justify-center items-center gap-[32px]">
+          {/* for the text */}
+          <div className="flex justify-end items-center ">
+            <div className="lg:w-[600px]">
+              <h1 className="text-[36px] leading-normal font-extrabold pb-[32px]">
+                Why you should choose us?
+              </h1>
+              <p className="text-[#717171] text-[16px] leading-[120%] max-w-[500px] pb-[16px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+                aperiam. Dolore maxime ullam a eaque vero expedita atque
+                aperiam, in minima, soluta autem accusantium eveniet fuga quos
+                saepe ratione id quae, ducimus minus quisquam. Eaque commodi
+                dignissimos reiciendis expedita ipsam? Saepe, voluptates? Ea ab,
+                consectetur adipisci repellendus soluta reiciendis corporis.
+              </p>
+              <div className="flex justify-start item-center gap-[16px]">
+                <div>
+                  <IoSettingsSharp
+                    className="w-[40px] h-[40px]"
+                    color="#734CB1"
+                  />
+                  <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal">
+                    Quick Support
+                  </h4>
+                  <div className="w-full h-[2px] bg-green-500" />
+                  <p className="text-[#717171] py-[16px] text-[14px]">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Laudantium
+                  </p>
+                </div>
+                <div>
+                  <FaMedal className="w-[40px] h-[40px]" color="#734CB1" />
+                  <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal">
+                    Experience
+                  </h4>
+                  <div className="w-full h-[2px] bg-green-500" />
+                  <p className="text-[#717171] py-[16px] text-[14px]">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Laudantium
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* for the image */}
+          <div>
+            <img src="/assets/images/chooseus.png" alt="choose" />
+          </div>
         </div>
         <div className="flex justify-between items-center p-[32px] bg-slate-200 rounded-md mt-[16px]">
           <div className="w-full justify-center">
-            <div className="flex justify-center items-center text-[32px] font-semibold py-[32px]">
+            {/* <div className="flex justify-center items-center text-[32px] font-semibold py-[32px]">
               <h2 className="font-roboto ">Benefits we provide</h2>
-            </div>
+            </div> */}
             <div className="flex justify-between items-center max-md:flex-col">
-              <div className="w-full px-[16px]">
+              {/* <div className="w-full px-[16px]">
                 <GoGraph className="w-[32px] h-[32px]" color="#53dbdb" />
                 <h4 className="text-[16px] font-semibold py-[10px] font-sans">
                   Analytical App
@@ -107,8 +145,8 @@ const Home = () => {
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Voluptatibus, facere!
                 </p>
-              </div>
-              <div className="w-full px-[16px]">
+              </div> */}
+              {/* <div className="w-full px-[16px]">
                 <IoSettingsSharp
                   className="w-[32px] h-[32px]"
                   color="#53dbdb"
@@ -120,11 +158,11 @@ const Home = () => {
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Voluptatibus, facere!
                 </p>
-              </div>
+              </div> */}
             </div>
             {/* === SECOND ONE === */}
             <div className="flex justify-between items-center py-[64px] gap-[16px] max-md:flex-col">
-              <div className="w-full px-[16px]">
+              {/* <div className="w-full px-[16px]">
                 <IoShieldCheckmark
                   className="w-[32px] h-[32px]"
                   color="#53dbdb"
@@ -136,8 +174,8 @@ const Home = () => {
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Voluptatibus, facere!
                 </p>
-              </div>
-              <div className="w-full px-[16px]">
+              </div> */}
+              {/* <div className="w-full px-[16px]">
                 <IoCloudUploadSharp
                   className="w-[32px] h-[32px]"
                   color="#53dbdb"
@@ -149,13 +187,13 @@ const Home = () => {
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Voluptatibus, facere!
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex w-full justify-center max-md:hidden">
-            <div className="">
+            {/* <div className="">
               <img src="/assets/images/data.jpg" alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

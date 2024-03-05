@@ -5,7 +5,7 @@ import { AboutUs, ContactUs, Home, OurServices, Vacancy } from "./_roots/pages";
 import RootLayout from "./_roots/RootLayout";
 const App = () => {
   return (
-    <div>
+    <div className="">
       <Routes>
         {/* === PRIVATE ROUTES FOR THE ADMIN */}
         <Route element={<AuthLayout />}>

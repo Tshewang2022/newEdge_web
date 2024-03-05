@@ -35,18 +35,18 @@ const OurServices = () => {
           </h2>
         </div>
         <div className="md:flex max-md:justify-between flex-1 item-center gap-[32px] pb-[32px]">
-          <div>
+          <div className="bg-[#0B2347] border-[1px] border-gray-200 p-[16px] hover:bg-blue-800">
             <div className="flex justify-center items-center mb-[8px]">
-              <FaNetworkWired className="w-[46px] h-[46px]" />
+              <FaNetworkWired className="w-[46px] h-[46px]" color="green"/>
             </div>
-            <h4 className="text-[16px] font-medium text-center">Networking</h4>
-            <p className="text-center">
+            <h4 className="text-[16px] font-medium text-center text-white">Networking</h4>
+            <p className="text-center text-[#717171]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
               laborum quaerat cupiditate rerum enim. A facere consequuntur
               distinctio impedit eaque!
             </p>
           </div>
-          <div>
+          <div className="border-[1px] border-gray-200 p-[16px] hover:bg-blue-800">
             <div className="flex justify-center items-center mb-[8px]">
               <MdComputer className="w-[46px] h-[46px]" />
             </div>
@@ -60,7 +60,7 @@ const OurServices = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="border-[1px] border-gray-200 p-[16px] hover:bg-blue-800">
             <div className="flex justify-center items-center mb-[8px]">
               <IoMdSettings className="w-[46px] h-[46px]" />
             </div>
@@ -72,7 +72,7 @@ const OurServices = () => {
               itaque, eos doloremque exercitationem quo
             </p>
           </div>
-          <div>
+          <div className="border-[1px] border-gray-200 p-[16px] hover:bg-blue-800">
             <div className="flex justify-center items-center mb-[8px]">
               <FaCloudDownloadAlt className="w-[46px] h-[46px]" />
             </div>
