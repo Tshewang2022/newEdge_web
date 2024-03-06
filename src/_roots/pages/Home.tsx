@@ -2,6 +2,9 @@
 import { IoSettingsSharp } from "react-icons/io5";
 import { FaMedal } from "react-icons/fa";
 import { MdOutlineDesignServices } from "react-icons/md";
+import { BsMicrosoft } from "react-icons/bs";
+import { SiCisco } from "react-icons/si";
+import { SiVimeo } from "react-icons/si";
 // import Banner from "./Banner";
 // import { SiTestinglibrary } from "react-icons/si";
 
@@ -17,24 +20,30 @@ const Home = () => {
       </div>
       <div>
         {/* ===SHOULD BE STORED IN THE CONTANTS === */}{" "}
-        <h2 className="text-[24px] font-semibold leading-normal font-roboto">
-          Trusted by
+        <h2 className="text-[24px] font-semibold leading-normal font-roboto flex justify-center ">
+          Our Partners
         </h2>
         <div className="flex flex-col justify-between items-center md:flex-row gap-[16px] mb-[64px]">
-          <div className="flex justify-center items-center bg-slate-400 w-full h-[56px] rounded-md">
+          <div className="flex justify-center items-center bg-[#0077b6] w-full h-[56px] rounded-md gap-2  hover:bg-[#2a9d8f]">
+             <BsMicrosoft className="h-[35px] w-[35px]"  />
             <h4 className="text-[16px] font-medium text-white">Microsoft</h4>
+
           </div>
-          <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
+          <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2 hover:bg-[#2a9d8f]">
+             < SiCisco className="h-[50px] w-[50px]" />
             <h4 className="text-[16px] font-medium text-white">Cisco</h4>
           </div>
-          <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
-            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+          <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2  hover:bg-[#2a9d8f] ">
+<SiVimeo className="w-[45px] h-[45px]"/> 
+            <h4 className="text-[16px] font-medium text-white">Vim Ware</h4>
           </div>
-          <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
-            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+          <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2  hover:bg-[#2a9d8f]">
+                <BsMicrosoft className="h-[35px] w-[35px]"  />
+            <h4 className="text-[16px] font-medium text-white">Microsoft</h4>
           </div>
-          <div className="flex justify-center items-center bg-slate-400 h-[56px] w-full rounded-md">
-            <h4 className="text-[16px] font-medium text-white">airbnb</h4>
+          <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2  hover:bg-[#2a9d8f]">
+               < SiCisco className="h-[50px] w-[50px]" />
+            <h4 className="text-[16px] font-medium text-white">Cisco</h4>
           </div>
         </div>
       </div>

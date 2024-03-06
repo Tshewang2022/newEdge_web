@@ -13,7 +13,7 @@ const Navbar = () => {
     setOpen((prev) => !prev);
   };
   return (
-    <nav className="bg-white py-[10px] border-[2px] w-full px-[256px] max-xl:px-[32px] fixed top-0 z-10 font-bold uppercase">
+    <nav className="bg-white py-[10px] border-[2px] w-full px-[256px] max-xl:px-[32px] fixed top-0 z-10 font-bold ">
       <div className="flex justify-between items-center ">
         {/* logo */}
         <img
@@ -23,7 +23,7 @@ const Navbar = () => {
         />
 
         {/* items for the menu */}
-        <ul className="flex flex-1 justify-end px-[32px] items-center gap-[32px] max-md:hidden text-md font-roboto">
+        <ul className="flex flex-1 justify-end px-[32px] items-center gap-[32px] max-md:hidden text-md font-roboto uppercase">
           {navLinks.map((link) => {
             const isActive = pathname == link.route;
             return (
