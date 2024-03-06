@@ -27,8 +27,8 @@ const OurServices = () => {
               error ea eligendi atque ex est officiis modi nulla perferendis
               fugit labore enim saepe sed. Hic perspiciatis dolorum alias esse.
             </p>
-            <Button className="h-[56px] px-[30px] bg-[#53dbdb] text-black text-[20px] font-sans">
-              Lear more
+            <Button className="h-[56px] px-[30px] bg-[#0077b6] hover:bg-[#2a9d8f] text-white font-bold text-[20px] font-sans transition duration-300 ease-in-out">
+              Learn more
             </Button>
           </div>
           <div className="w-1/2">
@@ -44,8 +44,8 @@ const OurServices = () => {
           </h2>
         </div>
         <div className="flex justify-center items-center pb-[64px]">
-          <div className="grid grid-cols-3 max-w-[1440px] h-[640px] gap-[32px]">
-            <div className="p-[32px]  text-center border-2 border-gray-300">
+          <div className="grid grid-cols-3 max-w-[1440px] h-[640px] gap-[32px]  ">
+            <div className="p-[32px]  text-center border-2 border-gray-300 hover:bg-[#ade8f4] transition duration-500 ease-in-out">
               <div className="items-center flex justify-center">
                 <MdComputer className="w-[68px] h-[68px]" color="blue" />
               </div>
@@ -58,7 +58,7 @@ const OurServices = () => {
                 mollitia?
               </p>
             </div>
-            <div className="p-[32px]  text-center border-2 border-gray-300">
+            <div className="p-[32px]  text-center border-2 border-gray-300 hover:bg-[#ade8f4] transition duration-500 ease-in-out">
               <div className="items-center flex justify-center">
                 <FaMobileAlt className="w-[68px] h-[68px]" color="blue" />
               </div>
@@ -71,7 +71,7 @@ const OurServices = () => {
                 mollitia?
               </p>
             </div>
-            <div className="p-[32px]  text-center border-2 border-gray-300">
+            <div className="p-[32px]  text-center border-2 border-gray-300 hover:bg-[#ade8f4] transition duration-500 ease-in-out">
               <div className="items-center flex justify-center">
                 <FaLaptopCode className="w-[68px] h-[68px]" color="blue" />
               </div>
@@ -84,7 +84,7 @@ const OurServices = () => {
                 mollitia?
               </p>
             </div>
-            <div className="p-[32px]  text-center border-2 border-gray-300">
+            <div className="p-[32px]  text-center border-2 border-gray-300 hover:bg-[#ade8f4] transition duration-500 ease-in-out">
               <div className="items-center flex justify-center">
                 <IoMdSettings className="w-[68px] h-[68px]" color="blue" />
               </div>
@@ -97,7 +97,7 @@ const OurServices = () => {
                 mollitia?
               </p>
             </div>
-            <div className="p-[32px]  text-center border-2 border-gray-300">
+            <div className="p-[32px]  text-center border-2 border-gray-300 hover:bg-[#ade8f4] transition duration-500 ease-in-out">
               <div className="items-center flex justify-center">
                 <FaNetworkWired className="w-[68px] h-[68px]" color="blue" />
               </div>
@@ -110,7 +110,7 @@ const OurServices = () => {
                 mollitia?
               </p>
             </div>
-            <div className="p-[32px]  text-center border-2 border-gray-300">
+            <div className="p-[32px]  text-center border-2 border-gray-300 hover:bg-[#ade8f4] transition duration-500 ease-in-out">
               <div className="items-center flex justify-center">
                 <TfiWorld className="w-[68px] h-[68px]" color="blue" />
               </div>
@@ -136,17 +136,17 @@ const OurServices = () => {
           <div className="flex justify-center items-center">
             <div className="justify-center items-center flex max-w-[1440px]">
               <div className="text-[16px] font-medium w-1/2 max-md:flex">
-                <div className="items-center px-[16px] py-[16px] bg-blue-200 mb-[32px] w-full shadow-lg">
+                <div className="items-center px-[16px] py-[16px] bg-blue-200 mb-[32px] w-full shadow-lg hover:bg-[#ade8f4] transition duration-300 ease-in-out">
                   <h2 className="">Networking</h2>
                 </div>
-                <div className="flex items-center px-[16px] h-[56px] mb-[32px] bg-slate-300 shadow-lg">
+                <div className="flex items-center px-[16px] h-[56px] mb-[32px] bg-slate-300 shadow-lg hover:bg-[#ade8f4] transition duration-300 ease-in-out">
                   <h2 className="">Application development</h2>
                 </div>
-                <div className="flex items-center px-[16px] h-[56px] mb-[32px] bg-slate-300 shadow-lg">
-                  <h2 className="py-[16px]">System integrations</h2>
+                <div className="flex items-center px-[16px] h-[56px] mb-[32px] bg-slate-300 shadow-lg hover:bg-[#ade8f4] transition duration-300 ease-in-out">
+                  <h2 className="py-[16px] ">System integrations</h2>
                 </div>
-                <div className="flex items-center px-[16px] h-[56px] mb-[32px] bg-slate-300 shadow-lg">
-                  <h2 className="py-[16px]">Server & Storage</h2>
+                <div className="flex items-center px-[16px] h-[56px] mb-[32px] bg-slate-300 shadow-lg hover:bg-[#ade8f4] transition duration-300 ease-in-out">
+                  <h2 className="py-[16px] ">Server & Storage</h2>
                 </div>
               </div>
               <div className="flex justify-center items-center w-1/2 ">
@@ -158,7 +158,7 @@ const OurServices = () => {
                     iste perferendis nam impedit cum architecto, sunt inventore
                     nulla aspernatur dolorum, quaerat aliquid. Harum, adipisci.
                   </p>
-                  <Button className="shadow-lg bg-[#53dbdb]">Learn more</Button>
+                  <Button className="shadow-lg bg-[#0077b6] hover:bg-[#2a9d8f]">Learn more</Button>
                 </div>
               </div>
             </div>

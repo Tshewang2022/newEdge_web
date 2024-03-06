@@ -4,24 +4,25 @@ import { FaSquareFacebook, FaSquareTwitter } from "react-icons/fa6";
 
 const Vacancy = () => {
   return (
-    <section className="mx-[256px] max-xl:mx-[32px]">
+    <section >
       {/* should contain the background images defined for vancancy */}
       <div
-        className="h-[640px] bg-no-repeat bg-cover bg-center flex items-center mb-[64px]"
-        style={{ backgroundImage: `url('/assets/images/team.jpg')` }}
+        className="h-[640px] bg-no-repeat bg-cover bg-center flex items-center mb-[64px] w-full object-cover opacity-2"
+        style={{ backgroundImage: `url('https://cdn.pixabay.com/photo/2018/12/10/10/21/earth-3866609_1280.jpg')` }}
       >
-        <div className="px-[32px]">
+        <div className="px-[32px] flex justify-center w-full  flex-col items-center">
           <h2 className="text-[46px] font-bold text-white font-roboto">
             Join our Team
           </h2>
-          <p className="text-white font-sans leading-[120%]">
+          <p className="text-white font-sans leading-[120%] font-semibold ">
             Our team has amazing culture and awesome people that <br /> we need
             to have in the country for the love of the people
           </p>
         </div>
       </div>
 
-      <div className="flex justify-center items-center mb-[16px]">
+      <div className="mx-[256px] max-xl:mx-[32px]">
+        <div className="flex justify-center items-center mb-[16px]">
         <h2 className="text-[32px] leading-normal font-roboto font-semibold">
           Vacancy
         </h2>
@@ -39,7 +40,7 @@ const Vacancy = () => {
             </p>
           </div>
           <div>
-            <Button>Apply</Button>
+            <Button className="bg-[#0077b6] hover:bg-[#2a9d8f]">Apply</Button>
           </div>
         </div>
         <div className="bg-slate-300 py-[32px] px-[32px] rounded-md mb-[16px] flex justify-between items-center max-md:flex-col">
@@ -54,7 +55,7 @@ const Vacancy = () => {
             </p>
           </div>
           <div>
-            <Button>Apply</Button>
+            <Button className="bg-[#0077b6] hover:bg-[#2a9d8f]">Apply</Button>
           </div>
         </div>
         <div className="bg-slate-300 py-[32px] px-[32px] rounded-md mb-[16px] flex justify-between items-center max-md:flex-col">
@@ -69,7 +70,7 @@ const Vacancy = () => {
             </p>
           </div>
           <div>
-            <Button>Apply</Button>
+            <Button  className="bg-[#0077b6] hover:bg-[#2a9d8f]">Apply</Button>
           </div>
         </div>
       </div>
@@ -91,7 +92,7 @@ const Vacancy = () => {
                 className="w-[250px] h-[200px] max-md:w-full"
               />
               <div className="px-[16px]">
-                <h2 className="font-sans leading-normal text-[16px] font-semibold">
+                <h2 className="font-sans leading-normal text-[16px] font-semibold hover:text-[#219ebc]">
                   Shortage workers in Bhutan
                 </h2>
                 <h4 className="text-[14px] pt-[8px]">February 10th, 2024</h4>
@@ -112,7 +113,7 @@ const Vacancy = () => {
                 className="w-[250px] h-[200px] max-md:w-full"
               />
               <div className="px-[16px]">
-                <h2 className="font-sans leading-normal text-[16px] font-semibold">
+                <h2 className="font-sans leading-normal text-[16px] font-semibold hover:text-[#219ebc]">
                   Shortage workers in Bhutan
                 </h2>
                 <h4 className="text-[14px] pt-[8px]">February 10th, 2024</h4>
@@ -133,7 +134,7 @@ const Vacancy = () => {
                 className="w-[250px] h-[200px] max-md:w-full"
               />
               <div className="px-[16px]">
-                <h2 className="font-sans leading-normal text-[16px] font-semibold">
+                <h2 className="font-sans leading-normal text-[16px] font-semibold hover:text-[#219ebc]">
                   Shortage workers in Bhutan
                 </h2>
                 <h4 className="text-[14px] pt-[8px] font-sans">
@@ -178,7 +179,7 @@ const Vacancy = () => {
                 <button className="bg-btn py-[8px] px-[24px] rounded-md text-white font-sans my-[8px]">
                   Vacancy
                 </button>
-                <p className="text-[14px] font-sans leading-[120%] line-clamp-4 mb-[8px] underline hover:cursor-pointer font-semibold">
+                {/* <p className="text-[14px] font-sans leading-[120%] line-clamp-4 mb-[8px] underline hover:cursor-pointer font-semibold">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Quis, sed. Veniam ducimus cum eum facilis adipisci delectus
                   vitae? Et voluptatem exercitationem laudantium ratione porro
@@ -187,8 +188,8 @@ const Vacancy = () => {
                   Veniam ducimus cum eum facilis adipisci delectus vitae? Et
                   voluptatem exercitationem laudantium ratione porro sed quam
                   aliquam obcaecati cumque dignissimos!
-                </p>
-                <p className="text-[14px] font-sans leading-[120%] line-clamp-4 underline hover:cursor-pointer font-semibold">
+                </p> */}
+                {/* <p className="text-[14px] font-sans leading-[120%] line-clamp-4 underline hover:cursor-pointer font-semibold">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Quis, sed. Veniam ducimus cum eum facilis adipisci delectus
                   vitae? Et voluptatem exercitationem laudantium ratione porro
@@ -197,11 +198,12 @@ const Vacancy = () => {
                   Veniam ducimus cum eum facilis adipisci delectus vitae? Et
                   voluptatem exercitationem laudantium ratione porro sed quam
                   aliquam obcaecati cumque dignissimos!
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

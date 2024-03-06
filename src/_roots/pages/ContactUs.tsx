@@ -222,7 +222,7 @@ const ContactUs = () => {
                     <div className="flex justify-start items-center ">
                       <Button
                         type="submit"
-                        className="shad-button_primary max-md:w-full bg-[#53dbdb]"
+                        className="shad-button_primary max-md:w-full bg-[#0077b6] hover:bg-[#2a9d8f]"
                       >
                         Submit
                       </Button>

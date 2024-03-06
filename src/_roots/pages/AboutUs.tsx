@@ -13,11 +13,11 @@ const AboutUs = () => {
   return (
     <section className="">
       <div
-        className="bg-cover bg-center bg-no-repeat h-[640px] flex justify-center items-center opacity-1"
-        style={{ backgroundImage: `url('/assets/images/technology.jpg')` }}
+        className="bg-cover bg-center bg-no-repeat h-[640px] flex justify-center items-center opacity-1 object"
+        style={{ backgroundImage: `url('https://cdn.pixabay.com/photo/2018/05/14/16/54/cyber-3400789_1280.jpg')` }}
       >
         <div className="flex justify-center items-center">
-          <h2 className="text-[56px] font-bold leading-normal font-roboto">
+          <h2 className="text-[56px] font-bold leading-normal font-roboto text-white">
             About Newedge
           </h2>
         </div>
@@ -36,22 +36,22 @@ const AboutUs = () => {
       </div>
       <div className="bg-[#211F3B] flex-row flex justify-center items-center gap-[64px] max-lg:flex-col py-[128px] px-[32px]">
         <div className="flex justify-start items-center w-[1440px] ">
-          <img src="/assets/images/image-about.png" alt="" />
+          <img src="/assets/images/image-about.png" alt="" className="transition-transform duration-300 transform hover:scale-110"/>
           <div className="px-[64px]">
             <h2 className="text-white text-[48px] font-sans font-bold leading-normal">
               What We Actually Do
             </h2>
             <div className="flex justify-start gap-[16px] py-[32px]">
-              <div className="text-white font-sans text-[14px] p-[16px] border-2 border-[#2cbaed] hover:bg-[#2cbaed]">
+              <div className="text-white font-sans text-[14px] p-[16px] border-2 border-[#2a9d8f] hover:bg-[#2a9d8f]">
                 <FaPhp className="w-[32px] h-[32px] icons" color="white" />
               </div>
-              <div className="text-white font-sans text-[14px] p-[16px] border-2 border-[#2cbaed] hover:bg-[#2cbaed]">
+              <div className="text-white font-sans text-[14px] p-[16px] border-2 border-[#2a9d8f] hover:bg-[#2a9d8f]">
                 <FaReact className="w-[32px] h-[32px]" color="white" />
               </div>
-              <div className="text-white font-sans text-[14px] p-[16px] border-2 border-[#2cbaed] hover:bg-[#2cbaed]">
+              <div className="text-white font-sans text-[14px] p-[16px] border-2 border-[#2a9d8f] hover:bg-[#2a9d8f]">
                 <DiJavascript className="w-[32px] h-[32px]" color="white" />
               </div>
-              <div className="text-white font-sans text-[14px] p-[16px] border-2 border-[#2cbaed] hover:bg-[#2cbaed]">
+              <div className="text-white font-sans text-[14px] p-[16px] border-2 border-[#2a9d8f] hover:bg-[#2a9d8f]">
                 <FaHtml5 className="w-[32px] h-[32px]" color="white" />
               </div>
             </div>
@@ -90,7 +90,7 @@ const AboutUs = () => {
             {/* === MANAGEMENT TEAM === */}
             <div className="flex justify-center items-center mt-[32px]">
               <div className="grid  grid-cols-4 px-[32px] gap-[32px]">
-                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg">
+                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg transition duration-500 ease-in-out transform hover:scale-105">
                   <img
                     src="/assets/images/profile.jpg"
                     alt="latest"
@@ -110,11 +110,11 @@ const AboutUs = () => {
                     </div>
                   </div>
                 </div>
-                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg">
+                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg  transition duration-500 ease-in-out transform hover:scale-105">
                   <img
                     src="/assets/images/profile.jpg"
                     alt="latest"
-                    className="rounded-t-[12px]"
+                    className="rounded-t-[12px] "
                   />
                   <div className="py-[32px]">
                     <h2 className="text-[20px] font-roboto font-semibold text-center">
@@ -130,7 +130,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                 </div>
-                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg">
+                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg transition duration-500 ease-in-out transform hover:scale-105">
                   <img
                     src="/assets/images/profile.jpg"
                     alt="latest"
@@ -150,7 +150,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                 </div>
-                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg">
+                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg transition duration-500 ease-in-out transform hover:scale-105">
                   <img
                     src="/assets/images/profile.jpg"
                     alt="latest"
@@ -158,7 +158,7 @@ const AboutUs = () => {
                   />
                   <div className="py-[32px]">
                     <h2 className="text-[20px] font-roboto font-semibold text-center">
-                      TSHEWANG GYALTSEHN
+                      Nima Wangdi
                     </h2>
                     <p className="text-center font-sans font-semibold text-[#717171]">
                       PROJECT MANAGER
