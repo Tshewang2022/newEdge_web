@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         sans: ["Josefin Sans", "sans-serif"],
         roboto: ["Roboto"],
+        monstat: ["Montserrat"],
       },
       colors: {
         border: "hsl(var(--border))",
