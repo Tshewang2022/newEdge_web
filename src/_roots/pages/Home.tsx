@@ -83,36 +83,6 @@ const Home = () => {
                   </div>
                 </div>
                 {/*  */}
-                <div className="flex justify-start item-center gap-[16px] ">
-                  {/* <div>
-                    <SiTestinglibrary
-                      className="w-[40px] h-[40px]"
-                      color="#734CB1"
-                    />
-                    <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal">
-                      QA Testing
-                    </h4>
-                    <div className="w-full h-[2px] bg-green-500" />
-                    <p className="text-[#717171] py-[16px] text-[14px]">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Laudantium
-                    </p>
-                  </div> */}
-                  {/* <div>
-                    <MdOutlineDesignServices
-                      className="w-[40px] h-[40px]"
-                      color="#734CB1"
-                    />
-                    <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal">
-                      UX/UI design
-                    </h4>
-                    <div className="w-full h-[2px] bg-green-500" />
-                    <p className="text-[#717171] py-[16px] text-[14px]">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Laudantium
-                    </p>
-                  </div> */}
-                </div>
               </div>
             </div>
             {/* for the image */}
@@ -126,7 +96,7 @@ const Home = () => {
             <br /> for your Business Idea Now
           </h1>
           <div className="flex justify-center items-center gap-[32px] py-[64px]">
-            <div className="bg-[#262051] hover:bg-white p-[32px] border-2 border-[#717171]">
+            <div className="bg-[#262051] hover:bg-white p-[32px] border-2 border-[#717171] max-w-[1440px]">
               <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
                 Product Design
               </h2>
@@ -224,7 +194,7 @@ const Home = () => {
               backgroundImage: `url('/assets/images/leadership-team.jpg')`,
             }}
           >
-            <div className="flex justify-between pt-[64px] px-[32px]">
+            <div className="flex justify-between pt-[64px] px-[32px] max-w-[1440px]">
               <div>
                 <p className="text-[20px] font-sans leading-normal font-normal text-white">
                   We are more than just a team
@@ -244,7 +214,7 @@ const Home = () => {
             What clients <br /> say about us
           </h1>
           <div className="flex justify-center items-center">
-            <div className="flex justify-center items-center gap-[32px] py-[32px]">
+            <div className="flex justify-center items-center gap-[32px] py-[32px] max-w-[1440px]">
               <div className="bg-white shadow-lg p-[36px] rounded-md">
                 <div className="flex justify-start items-center gap-[32px]">
                   <img
