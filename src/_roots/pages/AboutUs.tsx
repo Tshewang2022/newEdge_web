@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { DiJavascript } from "react-icons/di";
+import CountUp from "react-countup";
 const AboutUs = () => {
   return (
     <section className="">
@@ -86,77 +87,6 @@ const AboutUs = () => {
         <div>
           {/* === BOARD OF DIRECTORS */}
           <div className="my-[16px]">
-            {/* === SOFTWARE TEAM === */}
-            {/* <div className="flex justify-center items-center">
-              <div className="grid  grid-cols-4 px-[32px] gap-[32px]">
-                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg">
-                  <img
-                    src="/assets/images/profile.jpg"
-                    alt="latest"
-                    className="rounded-t-[12px]"
-                  />
-                  <div className="py-[32px]">
-                    <h2 className="text-[20px] font-roboto font-semibold text-center">TSHEWANG GYALTSEHN</h2>
-                    <p className="text-center font-sans font-semibold text-[#717171]">JUNIOR DEVELOPER</p>
-                    <div className="flex justify-center items-center gap-[16px] pt-[16px]">
-                      <FaInstagramSquare className="w-[24px] h-[24px]"/>
-                      <FaSquareXTwitter className="w-[24px] h-[24px]"/>
-                      <FaFacebookSquare className="w-[24px] h-[24px]"/>
-                    </div>
-                  </div>
-                </div>
-                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg">
-                  <img
-                    src="/assets/images/profile.jpg"
-                    alt="latest"
-                    className="rounded-t-[12px]"
-                  />
-                  <div className="py-[32px]">
-                    <h2 className="text-[20px] font-roboto font-semibold text-center">TSHEWANG GYALTSEHN</h2>
-                    <p className="text-center font-sans font-semibold text-[#717171]">JUNIOR DEVELOPER</p>
-                    <div className="flex justify-center items-center gap-[16px] pt-[16px]">
-                      <FaInstagramSquare className="w-[24px] h-[24px]" />
-                      <FaSquareXTwitter className="w-[24px] h-[24px]" />
-                      <FaFacebookSquare className="w-[24px] h-[24px]" />
-                    </div>
-                  </div>
-                </div>
-                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg">
-                  <img
-                    src="/assets/images/profile.jpg"
-                    alt="latest"
-                    className="rounded-t-[12px]"
-                  />
-                  <div className="py-[32px]">
-                    <h2 className="text-[20px] font-roboto font-semibold text-center">TSHEWANG GYALTSEHN</h2>
-                    <p className="text-center font-sans font-semibold text-[#717171]">JUNIOR DEVELOPER</p>
-                    <div className="flex justify-center items-center gap-[16px] pt-[16px]">
-                      <FaInstagramSquare className="w-[24px] h-[24px]" />
-                      <FaSquareXTwitter className="w-[24px] h-[24px]" />
-                      <FaFacebookSquare className="w-[24px] h-[24px]" />
-                    </div>
-                  </div>
-                </div>
-                <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg">
-                  <img
-                    src="/assets/images/profile.jpg"
-                    alt="latest"
-                    className="rounded-t-[12px]"
-                  />
-                  <div className="py-[32px]">
-                    <h2 className="text-[20px] font-roboto font-semibold text-center">TSHEWANG GYALTSEHN</h2>
-                    <p className="text-center font-sans font-semibold text-[#717171]">JUNIOR DEVELOPER</p>
-                    <div className="flex justify-center items-center gap-[16px] pt-[16px]">
-                      <FaInstagramSquare className="w-[24px] h-[24px]" />
-                      <FaSquareXTwitter className="w-[24px] h-[24px]" />
-                      <FaFacebookSquare className="w-[24px] h-[24px]" />
-                    </div>
-                  </div>
-                </div>
-             
-              </div>
-            </div> */}
-
             {/* === MANAGEMENT TEAM === */}
             <div className="flex justify-center items-center mt-[32px]">
               <div className="grid  grid-cols-4 px-[32px] gap-[32px]">
@@ -248,7 +178,7 @@ const AboutUs = () => {
           <div className="flex justify-between items-center  bg-gradient-to-r from-[#46DBFC] to-[#664DB5]  py-[78px] p-[32px] gap-[32px] w-[1490px]">
             <div className="text-center px-[32px]">
               <h1 className="text-white text-[56px] font-sans font-black">
-                120+
+                <CountUp start={0} end={200} delay={1} duration={5} />+
               </h1>
               <h2 className="text-white text-[20px] font-sans font-bold">
                 ACTIVE CLIENTS
@@ -256,7 +186,7 @@ const AboutUs = () => {
             </div>
             <div className="text-center px-[32px]">
               <h1 className="text-white text-[56px] font-sans font-black">
-                10+
+                <CountUp start={0} end={10} delay={1} duration={5} />+
               </h1>
               <h2 className="text-white text-[20px] font-sans font-bold">
                 UNDER DEVELOPMENT
@@ -264,7 +194,7 @@ const AboutUs = () => {
             </div>
             <div className="text-center px-[32px]">
               <h1 className="text-white text-[56px] font-sans font-black">
-                20+
+                <CountUp start={0} end={20} delay={1} duration={5} />+
               </h1>
               <h2 className="text-white text-[20px] font-sans font-bold">
                 UNDER SUPPORT
@@ -272,7 +202,8 @@ const AboutUs = () => {
             </div>
             <div className="text-center px-[32px] ">
               <h1 className="text-white text-[56px] font-sans font-black">
-                10M+
+                <CountUp start={0} end={20} delay={1} duration={5} />
+                M+
               </h1>
               <h2 className="text-white text-[20px] font-sans font-bold">
                 REVENUES
