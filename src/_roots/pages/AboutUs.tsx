@@ -6,9 +6,15 @@ import {
   FaLongArrowAltRight,
   FaFacebookSquare,
 } from "react-icons/fa";
+
+import CountUp from "react-countup";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { DiJavascript } from "react-icons/di";
+
+import { useState } from "react";
+
 const AboutUs = () => {
+  const [count, setCount] = useState(false);
   return (
     <section className="">
       <div
@@ -248,7 +254,7 @@ const AboutUs = () => {
           <div className="flex justify-between items-center  bg-gradient-to-r from-[#46DBFC] to-[#664DB5]  py-[78px] p-[32px] gap-[32px] w-[1490px]">
             <div className="text-center px-[32px]">
               <h1 className="text-white text-[56px] font-sans font-black">
-                120+
+                <CountUp start={10} end={200} delay={0} duration={5} />+
               </h1>
               <h2 className="text-white text-[20px] font-sans font-bold">
                 ACTIVE CLIENTS
@@ -256,7 +262,7 @@ const AboutUs = () => {
             </div>
             <div className="text-center px-[32px]">
               <h1 className="text-white text-[56px] font-sans font-black">
-                10+
+                <CountUp start={0} end={20} delay={0} duration={5} />+
               </h1>
               <h2 className="text-white text-[20px] font-sans font-bold">
                 UNDER DEVELOPMENT
@@ -264,7 +270,7 @@ const AboutUs = () => {
             </div>
             <div className="text-center px-[32px]">
               <h1 className="text-white text-[56px] font-sans font-black">
-                20+
+                <CountUp start={0} end={30} delay={0} duration={5} />+
               </h1>
               <h2 className="text-white text-[20px] font-sans font-bold">
                 UNDER SUPPORT
@@ -272,7 +278,8 @@ const AboutUs = () => {
             </div>
             <div className="text-center px-[32px] ">
               <h1 className="text-white text-[56px] font-sans font-black">
-                10M+
+                <CountUp start={0} end={20} delay={0} duration={5} />
+                M+
               </h1>
               <h2 className="text-white text-[20px] font-sans font-bold">
                 REVENUES
