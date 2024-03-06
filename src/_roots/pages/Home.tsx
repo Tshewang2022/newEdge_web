@@ -11,45 +11,80 @@ import { SiVimeo } from "react-icons/si";
 const Home = () => {
   return (
     <section className="">
-      <div className="flex items-center justify-between max-md:flex-col mt-[32px]">
-        {/* <div className="w-full flex justify-start items-center "> */}
-          {/* <div className="px-[32px] max-md:px-[16px]"></div> */}
-        {/* </div> */}
-{/* <Banner /> */}
-
+      <div className="flex justify-center item-center bg-gradient-to-r to-[#D1F6FE] from-[#F6D0FD] min-h-screen relative">
+        <div className="max-w-[1440px] flex justify-between items-center">
+          <div>
+            <h1
+              className="text-[76px] text-white font-monstat font-normal leading-[100%] text-center"
+              style={{ fontWeight: 1500 }}
+            >
+              END-TO-END <br /> DEVELOPMENT
+            </h1>
+            <p className="text-center max-w-[650px] py-[32px]">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+              temporibus tenetur dolores animi soluta, alias dolorum architecto
+            </p>
+          </div>
+          {/* <img src="/assets/images/home9.png" alt="" /> */}
+        </div>
       </div>
-      <div>
-        {/* ===SHOULD BE STORED IN THE CONTANTS === */}{" "}
+      <div className="flex justify-center items-center w-full mt-[128px] absolute bottom-[-49px]">
+        <div className="flex justify-between items-center w-[1440px] gap-16 bg-[#f4f4f4] p-[16px] shadow-lg hover:shadow-xl">
+          <div className="w-full">
+            <img src="/assets/icons/hp.png" alt="hp" />
+          </div>
+          <div className="w-full">
+            <img src="/assets/icons/ibm.png" alt="hp" />
+          </div>
+          <div className="w-full">
+            <img src="/assets/icons/redhat.png" alt="hp" />
+          </div>
+          <div className="w-full">
+            <img src="/assets/icons/wmware.png" alt="hp" />
+          </div>
+          <div className="w-full">
+            <img src="/assets/icons/microsoft.png" alt="hp" />
+          </div>
+          <div className="w-full">
+            <img src="/assets/icons/cisco.png" alt="hp" />
+          </div>
+        </div>
+      </div>
+      {/* <div className="w-full flex justify-start items-center "> */}
+      {/* <div className="px-[32px] max-md:px-[16px]"></div> */}
+      {/* </div> */}
+      {/* <Banner /> */}
+
+      {/* <div>
         <h2 className="text-[24px] font-semibold leading-normal font-roboto flex justify-center ">
           Our Partners
         </h2>
         <div className="flex flex-col justify-between items-center md:flex-row gap-[16px] mb-[64px]">
           <div className="flex justify-center items-center bg-[#0077b6] w-full h-[56px] rounded-md gap-2  hover:bg-[#2a9d8f]">
-             <BsMicrosoft className="h-[35px] w-[35px]"  />
+            <BsMicrosoft className="h-[35px] w-[35px]" />
             <h4 className="text-[16px] font-medium text-white">Microsoft</h4>
-
           </div>
           <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2 hover:bg-[#2a9d8f]">
-             < SiCisco className="h-[50px] w-[50px]" />
+            <SiCisco className="h-[50px] w-[50px]" />
             <h4 className="text-[16px] font-medium text-white">Cisco</h4>
           </div>
           <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2  hover:bg-[#2a9d8f] ">
-<SiVimeo className="w-[45px] h-[45px]"/> 
+            <SiVimeo className="w-[45px] h-[45px]" />
             <h4 className="text-[16px] font-medium text-white">Vim Ware</h4>
           </div>
           <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2  hover:bg-[#2a9d8f]">
-                <BsMicrosoft className="h-[35px] w-[35px]"  />
+            <BsMicrosoft className="h-[35px] w-[35px]" />
             <h4 className="text-[16px] font-medium text-white">Microsoft</h4>
           </div>
           <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2  hover:bg-[#2a9d8f]">
-               < SiCisco className="h-[50px] w-[50px]" />
+            <SiCisco className="h-[50px] w-[50px]" />
             <h4 className="text-[16px] font-medium text-white">Cisco</h4>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <hr className="bg-gray-700 h-[2px] w-full border-[1px]" /> */}
 
-      <section className="my-[32px] bg-[#FFFFFF">
+      <section className="mt-[120px] bg-[#FFFFFF">
         <div className="flex justify-center items-center ">
           <div className="flex justify-center items-center gap-[64px] w-[1440px]">
             {/* for the text */}
@@ -129,12 +164,17 @@ const Home = () => {
             </div>
             {/* for the image */}
 
-            <img src="/assets/images/chooseus.png" alt="choose" className="transition-transform duration-300 transform hover:scale-110" />
+            <img
+              src="/assets/images/chooseus.png"
+              alt="choose"
+              className="transition-transform duration-300 transform hover:scale-110"
+            />
           </div>
         </div>
         <div className="bg-[#221F3C] py-[64px]">
           <h1 className="text-center  font-sans text-[48px] font-black text-white">
-            Design the Concept for your Business Idea Now
+            Design the Concept
+            <br /> for your Business Idea Now
           </h1>
           <div className="flex justify-center items-center gap-[32px] py-[64px] ">
             <div className="bg-[#262051] hover:bg-[#219ebc] p-[32px] border-2 border-[#717171] transition duration-300 ease-in-out">
