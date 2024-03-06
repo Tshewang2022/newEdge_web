@@ -61,10 +61,10 @@ const Home = () => {
                 <div className="flex justify-start item-center gap-[16px]">
                   <div>
                     <IoSettingsSharp
-                      className="w-[40px] h-[40px]"
+                      className="w-[40px] h-[40px] "
                       color="#734CB1"
                     />
-                    <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal">
+                    <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal hover:text-[#0077b6] hover:font-bold">
                       Quick Support
                     </h4>
                     <div className="w-full h-[2px] bg-green-500" />
@@ -75,7 +75,7 @@ const Home = () => {
                   </div>
                   <div>
                     <FaMedal className="w-[40px] h-[40px]" color="#734CB1" />
-                    <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal">
+                    <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal hover:text-[#0077b6] hover:font-bold">
                       Experience
                     </h4>
                     <div className="w-full h-[2px] bg-green-500" />
@@ -120,20 +120,19 @@ const Home = () => {
             </div>
             {/* for the image */}
 
-            <img src="/assets/images/chooseus.png" alt="choose" className="" />
+            <img src="/assets/images/chooseus.png" alt="choose" className="transition-transform duration-300 transform hover:scale-110" />
           </div>
         </div>
         <div className="bg-[#221F3C] py-[64px]">
           <h1 className="text-center  font-sans text-[48px] font-black text-white">
-            Design the Concept
-            <br /> for your Business Idea Now
+            Design the Concept for your Business Idea Now
           </h1>
           <div className="flex justify-center items-center gap-[32px] py-[64px] ">
-            <div className="bg-[#262051] hover:bg-[#45BAFB] p-[32px] border-2 border-[#717171] transition duration-300 ease-in-out">
+            <div className="bg-[#262051] hover:bg-[#219ebc] p-[32px] border-2 border-[#717171] transition duration-300 ease-in-out">
               <h2 className="text-[24px] font-semibold text-start py-[16px] text-white  ">
                 Product Design
               </h2>
-              <p className="text-[#717171] text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
+              <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, quod. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Inventore, facilis.
@@ -151,11 +150,11 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="bg-[#262051]  hover:bg-[#45BAFB]  p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
+            <div className="bg-[#262051]  hover:bg-[#219ebc]  p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
               <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
                 Development
               </h2>
-              <p className="text-[#717171] text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
+              <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, quod. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Inventore, facilis.
@@ -173,11 +172,11 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="bg-[#262051]  hover:bg-[#45BAFB] p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
+            <div className="bg-[#262051]  hover:bg-[#219ebc] p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
               <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
                 Data Analytics
               </h2>
-              <p className="text-[#717171] text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
+              <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, quod. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Inventore, facilis.
@@ -195,11 +194,11 @@ const Home = () => {
                 />
               </div>
             </div>
-            <div className="bg-[#262051]  hover:bg-[#45BAFB] p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
+            <div className="bg-[#262051]  hover:bg-[#219ebc] p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
               <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
                 Product Design
               </h2>
-              <p className="text-[#717171] text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
+              <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur, quod. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Inventore, facilis.
@@ -236,20 +235,20 @@ const Home = () => {
                   LETS BUILD YOUR WEBSITE
                 </h1>
               </div>
-              <button className="text-[16px] font-sans font-bold hover:bg-blue-400 hover:text-black px-[24px] border-2 border-white h-[56px] text-white">
+              <button className="text-[16px] font-sans font-bold hover:bg-[#ade8f4] hover:text-black px-[24px] border-2 border-white h-[56px] text-white">
                 CONTACT US
               </button>
             </div>
           </div>
         </div>
-        <div className="my-[64px] bg-[#f4f4f4] py-[64px]">
+        <div className="my-[64px] bg-[#f4f4f4] py-[64px] ">
           <h1 className="text-[48px] leading-[100%] text-center font-black">
-            What clients <br /> say about us
+            What clients say about us
           </h1>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center  ">
             <div className="flex justify-center items-center gap-[32px] py-[32px]">
-              <div className="bg-white shadow-lg p-[36px] rounded-md">
-                <div className="flex justify-start items-center gap-[32px]">
+              <div className="bg-white shadow-lg p-[36px] rounded-md hover:bg-[#ade8f4]  transition duration-300 ease-in-out">
+                <div className="flex justify-start items-center gap-[32px] ">
                   <img
                     src="/assets/images/profile.jpg"
                     alt=""
@@ -270,7 +269,7 @@ const Home = () => {
                   magni at dolorem blanditiis ex!"
                 </p>
               </div>
-              <div className="bg-white shadow-lg p-[36px] rounded-md">
+              <div className="bg-white shadow-lg p-[36px] rounded-md hover:bg-[#ade8f4]  transition duration-300 ease-in-out">
                 <div className="flex justify-start items-center gap-[32px]">
                   <img
                     src="/assets/images/profile.jpg"
@@ -279,10 +278,10 @@ const Home = () => {
                   />
                   {/* <div className="bg-blue-400 h-[96px] w-[96px] rounded-full"></div> */}
                   <h2 className="text-[32px] text-black leading-[120%] font-sans font-semibold">
-                    Tshewang Gyaltshen
+                    Nima Wangdi
                   </h2>
                 </div>
-                <p className="max-w-[628px] py-[32px] font-sans text-[16px] leading-normal">
+                <p className="max-w-[628px] py-[32px] font-sans text-[16px] leading-normal ">
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Maiores, recusandae amet repellendus quisquam ea cumque dolor
                   laudantium esse harum, nesciunt totam reiciendis aut
