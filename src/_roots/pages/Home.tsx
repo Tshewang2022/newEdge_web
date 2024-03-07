@@ -28,7 +28,7 @@ const Home = () => {
               temporibus tenetur dolores animi soluta, alias dolorum architecto
             </p>
             <div className="flex justify-center items-center pt-[32px]">
-              <button className="text-[20px] text-white bg-[#0177B6] px-[32px] py-[16px] rounded-md font-semibold">
+              <button className="text-[20px] text-white bg-[#0177B6]  hover:bg-[#219ebc] px-[32px] py-[16px] rounded-md font-semibold">
                 LEARN MORE
               </button>
             </div>
