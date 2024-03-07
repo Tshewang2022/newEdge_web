@@ -1,31 +1,38 @@
-// import { Button } from "@/components/ui/button";
 import { IoSettingsSharp } from "react-icons/io5";
 import { FaMedal } from "react-icons/fa";
 import { MdOutlineDesignServices } from "react-icons/md";
-import { BsMicrosoft } from "react-icons/bs";
-import { SiCisco } from "react-icons/si";
-import { SiVimeo } from "react-icons/si";
-// import Banner from "./Banner";
-// import { SiTestinglibrary } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <section className="">
-      <div className="flex justify-center item-center bg-gradient-to-r to-[#D1F6FE] from-[#F6D0FD] min-h-screen relative">
+      <div
+        className="flex justify-center item-center bg-gradient-to-r to-[#D1F6FE] from-[#F6D0FD] min-h-screen relative bg-no-repeat bg-center bg-cover"
+        style={{
+          backgroundImage: `url('https://cdn.pixabay.com/photo/2022/04/04/16/24/waves-7111758_960_720.jpg')`,
+        }}
+      >
         <div className="max-w-[1440px] flex justify-between items-center">
           <div>
-            <h1
-              className="text-[76px] text-white font-monstat font-normal leading-[100%] text-center"
-              style={{ fontWeight: 1500 }}
+            <motion.h1
+              initial={{ y: -200, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 4 }}
+              className="text-[76px] text-white font-monstat font-normal leading-[100%] text-center max-sm:text-[32px]"
+              style={{ fontWeight: 900 }}
             >
               END-TO-END <br /> DEVELOPMENT
-            </h1>
-            <p className="text-center max-w-[650px] py-[32px]">
+            </motion.h1>
+            <p className="text-center max-w-[650px] py-[32px] text-white">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
               temporibus tenetur dolores animi soluta, alias dolorum architecto
             </p>
+            <div className="flex justify-center items-center pt-[32px]">
+              <button className="text-[20px] text-white bg-[#0177B6] px-[32px] py-[16px] rounded-md font-semibold">
+                LEARN MORE
+              </button>
+            </div>
           </div>
-          {/* <img src="/assets/images/home9.png" alt="" /> */}
         </div>
       </div>
       <div className="flex justify-center items-center w-full mt-[128px] absolute bottom-[-49px]">
@@ -50,46 +57,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className="w-full flex justify-start items-center "> */}
-      {/* <div className="px-[32px] max-md:px-[16px]"></div> */}
-      {/* </div> */}
-      {/* <Banner /> */}
-
-      {/* <div>
-        <h2 className="text-[24px] font-semibold leading-normal font-roboto flex justify-center ">
-          Our Partners
-        </h2>
-        <div className="flex flex-col justify-between items-center md:flex-row gap-[16px] mb-[64px]">
-          <div className="flex justify-center items-center bg-[#0077b6] w-full h-[56px] rounded-md gap-2  hover:bg-[#2a9d8f]">
-            <BsMicrosoft className="h-[35px] w-[35px]" />
-            <h4 className="text-[16px] font-medium text-white">Microsoft</h4>
-          </div>
-          <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2 hover:bg-[#2a9d8f]">
-            <SiCisco className="h-[50px] w-[50px]" />
-            <h4 className="text-[16px] font-medium text-white">Cisco</h4>
-          </div>
-          <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2  hover:bg-[#2a9d8f] ">
-            <SiVimeo className="w-[45px] h-[45px]" />
-            <h4 className="text-[16px] font-medium text-white">Vim Ware</h4>
-          </div>
-          <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2  hover:bg-[#2a9d8f]">
-            <BsMicrosoft className="h-[35px] w-[35px]" />
-            <h4 className="text-[16px] font-medium text-white">Microsoft</h4>
-          </div>
-          <div className="flex justify-center items-center bg-[#0077b6] h-[56px] w-full rounded-md gap-2  hover:bg-[#2a9d8f]">
-            <SiCisco className="h-[50px] w-[50px]" />
-            <h4 className="text-[16px] font-medium text-white">Cisco</h4>
-          </div>
-        </div>
-      </div> */}
-      {/* <hr className="bg-gray-700 h-[2px] w-full border-[1px]" /> */}
-
       <section className="mt-[120px] bg-[#FFFFFF">
         <div className="flex justify-center items-center ">
-          <div className="flex justify-center items-center gap-[64px] w-[1440px]">
+          <div className="flex justify-center items-center flex-row gap-[64px] w-[1440px] max-lg:flex-col">
             {/* for the text */}
             <div className="flex justify-end items-center ">
-              <div className="">
+              <div className="max-sm:px-[16px]">
                 <h1 className="text-[36px] leading-normal font-extrabold pb-[32px]">
                   Why you should choose us?
                 </h1>
@@ -129,41 +102,8 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                {/*  */}
-                <div className="flex justify-start item-center gap-[16px] ">
-                  {/* <div>
-                    <SiTestinglibrary
-                      className="w-[40px] h-[40px]"
-                      color="#734CB1"
-                    />
-                    <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal">
-                      QA Testing
-                    </h4>
-                    <div className="w-full h-[2px] bg-green-500" />
-                    <p className="text-[#717171] py-[16px] text-[14px]">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Laudantium
-                    </p>
-                  </div> */}
-                  {/* <div>
-                    <MdOutlineDesignServices
-                      className="w-[40px] h-[40px]"
-                      color="#734CB1"
-                    />
-                    <h4 className="text-[20px] font-sans font-semibold py-[16px] leading-normal">
-                      UX/UI design
-                    </h4>
-                    <div className="w-full h-[2px] bg-green-500" />
-                    <p className="text-[#717171] py-[16px] text-[14px]">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Laudantium
-                    </p>
-                  </div> */}
-                </div>
               </div>
             </div>
-            {/* for the image */}
-
             <img
               src="/assets/images/chooseus.png"
               alt="choose"
@@ -172,115 +112,117 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-[#221F3C] py-[64px]">
-          <h1 className="text-center  font-sans text-[48px] font-black text-white">
+          <h1 className="text-center  font-sans text-[48px] font-black text-white max-sm:text-[32px]">
             Design the Concept
             <br /> for your Business Idea Now
           </h1>
-          <div className="flex justify-center items-center gap-[32px] py-[64px] ">
-            <div className="bg-[#262051] hover:bg-[#219ebc] p-[32px] border-2 border-[#717171] transition duration-300 ease-in-out">
-              <h2 className="text-[24px] font-semibold text-start py-[16px] text-white  ">
-                Product Design
-              </h2>
-              <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, quod. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Inventore, facilis.
-              </p>
-              <a
-                href=""
-                className="text-[14px] font-sans font-normal text-white hover:font-bold"
-              >
-                LEARN MORE
-              </a>
-              <div className="flex justify-end items-end pt-[16px]">
-                <MdOutlineDesignServices
-                  className="w-[40px] h-[40px]"
-                  color="green"
-                />
+          <div className="flex justify-center items-center">
+            <div className="grid grid-cols-4 max-sm:grid-cols-1 max-lg:grid-cols-2 gap-[32px] py-[64px] max-w-[1440px]">
+              <div className="bg-[#262051] hover:bg-[#219ebc] p-[32px] border-2 border-[#717171] transition duration-300 ease-in-out">
+                <h2 className="text-[24px] font-semibold text-start py-[16px] text-white  ">
+                  Product Design
+                </h2>
+                <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur, quod. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Inventore, facilis.
+                </p>
+                <a
+                  href=""
+                  className="text-[14px] font-sans font-normal text-white hover:font-bold"
+                >
+                  LEARN MORE
+                </a>
+                <div className="flex justify-end items-end pt-[16px]">
+                  <MdOutlineDesignServices
+                    className="w-[40px] h-[40px]"
+                    color="green"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="bg-[#262051]  hover:bg-[#219ebc]  p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
-              <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
-                Development
-              </h2>
-              <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, quod. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Inventore, facilis.
-              </p>
-              <a
-                href=""
-                className="text-[14px] font-sans font-normal text-white hover:font-bold"
-              >
-                LEARN MORE
-              </a>
-              <div className="flex justify-end items-end pt-[16px]">
-                <MdOutlineDesignServices
-                  className="w-[40px] h-[40px]"
-                  color="green"
-                />
+              <div className="bg-[#262051]  hover:bg-[#219ebc]  p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
+                <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
+                  Development
+                </h2>
+                <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur, quod. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Inventore, facilis.
+                </p>
+                <a
+                  href=""
+                  className="text-[14px] font-sans font-normal text-white hover:font-bold"
+                >
+                  LEARN MORE
+                </a>
+                <div className="flex justify-end items-end pt-[16px]">
+                  <MdOutlineDesignServices
+                    className="w-[40px] h-[40px]"
+                    color="green"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="bg-[#262051]  hover:bg-[#219ebc] p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
-              <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
-                Data Analytics
-              </h2>
-              <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, quod. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Inventore, facilis.
-              </p>
-              <a
-                href=""
-                className="text-[14px] font-sans font-normal text-white hover:font-bold"
-              >
-                LEARN MORE
-              </a>
-              <div className="flex justify-end items-end pt-[16px]">
-                <MdOutlineDesignServices
-                  className="w-[40px] h-[40px]"
-                  color="green"
-                />
+              <div className="bg-[#262051]  hover:bg-[#219ebc] p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
+                <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
+                  Data Analytics
+                </h2>
+                <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur, quod. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Inventore, facilis.
+                </p>
+                <a
+                  href=""
+                  className="text-[14px] font-sans font-normal text-white hover:font-bold"
+                >
+                  LEARN MORE
+                </a>
+                <div className="flex justify-end items-end pt-[16px]">
+                  <MdOutlineDesignServices
+                    className="w-[40px] h-[40px]"
+                    color="green"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="bg-[#262051]  hover:bg-[#219ebc] p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
-              <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
-                Product Design
-              </h2>
-              <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur, quod. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Inventore, facilis.
-              </p>
-              <a
-                href=""
-                className="text-[14px] font-sans font-normal text-white hover:font-bold"
-              >
-                LEARN MORE
-              </a>
-              <div className="flex justify-end items-end pt-[16px]">
-                <MdOutlineDesignServices
-                  className="w-[40px] h-[40px]"
-                  color="green"
-                />
+              <div className="bg-[#262051]  hover:bg-[#219ebc] p-[32px] group-hover:text-black border-2 border-[#717171] transition duration-300 ease-in-out">
+                <h2 className="text-[24px] font-semibold text-start py-[16px] text-white ">
+                  Product Design
+                </h2>
+                <p className="text-white font-semibold text-[14px] font-sans leading-[150%] max-w-[268px] pb-[16px] mb-[32px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur, quod. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Inventore, facilis.
+                </p>
+                <a
+                  href=""
+                  className="text-[14px] font-sans font-normal text-white hover:font-bold"
+                >
+                  LEARN MORE
+                </a>
+                <div className="flex justify-end items-end pt-[16px]">
+                  <MdOutlineDesignServices
+                    className="w-[40px] h-[40px]"
+                    color="green"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="flex justify-center items-center mt-[64px]">
           <div
-            className="min-w-[1440px] h-[350px] bg-no-repeat bg-transparent bg-cover bg-top
+            className="w-[1440px] h-[350px] bg-no-repeat bg-transparent bg-cover bg-top
             "
             style={{
               backgroundImage: `url('/assets/images/leadership-team.jpg')`,
             }}
           >
-            <div className="flex justify-between pt-[64px] px-[32px]">
+            <div className="flex justify-between pt-[64px] px-[32px] max-sm:flex-col flex-row">
               <div>
-                <p className="text-[20px] font-sans leading-normal font-normal text-white">
+                <p className="text-[20px] font-sans leading-normal font-normal text-white max-sm:text-center">
                   We are more than just a team
                 </p>
-                <h1 className="text-[48px] text-white font-black">
+                <h1 className="text-[48px] text-white font-black max-sm:text-[32px] max-sm:w-full max-sm:text-center max-sm:pb-[16px]">
                   LETS BUILD YOUR WEBSITE
                 </h1>
               </div>
@@ -291,12 +233,12 @@ const Home = () => {
           </div>
         </div>
         <div className="my-[64px] bg-[#f4f4f4] py-[64px] ">
-          <h1 className="text-[48px] leading-[100%] text-center font-black">
+          <h1 className="text-[48px] leading-[100%] text-center font-black max-sm:text-[32px]">
             What clients say about us
           </h1>
           <div className="flex justify-center items-center  ">
-            <div className="flex justify-center items-center gap-[32px] py-[32px]">
-              <div className="bg-white shadow-lg p-[36px] rounded-md hover:bg-[#ade8f4]  transition duration-300 ease-in-out">
+            <div className="flex justify-center flex-row items-center gap-[32px] py-[32px] max-sm:flex-col">
+              <div className="bg-white shadow-lg p-[36px] rounded-md  transition duration-300 ease-in-out">
                 <div className="flex justify-start items-center gap-[32px] ">
                   <img
                     src="/assets/images/profile.jpg"
@@ -304,7 +246,7 @@ const Home = () => {
                     className="w-[96px] h-[96px] rounded-full"
                   />
                   {/* <div className="bg-blue-400 h-[96px] w-[96px] rounded-full"></div> */}
-                  <h2 className="text-[32px] text-black leading-[120%] font-sans font-semibold">
+                  <h2 className="text-[32px] text-black leading-[120%] font-sans font-semibold max-sm:text-[24px]">
                     Tshewang Gyaltshen
                   </h2>
                 </div>
@@ -318,15 +260,14 @@ const Home = () => {
                   magni at dolorem blanditiis ex!"
                 </p>
               </div>
-              <div className="bg-white shadow-lg p-[36px] rounded-md hover:bg-[#ade8f4]  transition duration-300 ease-in-out">
+              <div className="bg-white shadow-lg p-[36px] rounded-md  transition duration-300 ease-in-out">
                 <div className="flex justify-start items-center gap-[32px]">
                   <img
                     src="/assets/images/profile.jpg"
                     alt=""
                     className="w-[96px] h-[96px] rounded-full"
                   />
-                  {/* <div className="bg-blue-400 h-[96px] w-[96px] rounded-full"></div> */}
-                  <h2 className="text-[32px] text-black leading-[120%] font-sans font-semibold">
+                  <h2 className="text-[32px] text-black leading-[120%] font-sans font-semibold max-sm:text-[24px]">
                     Nima Wangdi
                   </h2>
                 </div>

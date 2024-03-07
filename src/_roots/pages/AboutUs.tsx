@@ -14,10 +14,12 @@ const AboutUs = () => {
     <section className="">
       <div
         className="bg-cover bg-center bg-no-repeat h-[640px] flex justify-center items-center opacity-1 object"
-        style={{ backgroundImage: `url('https://cdn.pixabay.com/photo/2018/05/14/16/54/cyber-3400789_1280.jpg')` }}
+        style={{
+          backgroundImage: `url('https://cdn.pixabay.com/photo/2018/05/14/16/54/cyber-3400789_1280.jpg')`,
+        }}
       >
         <div className="flex justify-center items-center">
-          <h2 className="text-[56px] font-bold leading-normal font-roboto text-white">
+          <h2 className="text-[56px] font-bold leading-normal font-roboto text-white text-center">
             About Newedge
           </h2>
         </div>
@@ -34,11 +36,15 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="bg-[#211F3B] flex-row flex justify-center items-center gap-[64px] max-lg:flex-col py-[128px] px-[32px]">
-        <div className="flex justify-start items-center w-[1440px] ">
-          <img src="/assets/images/image-about.png" alt="" className="transition-transform duration-300 transform hover:scale-110"/>
-          <div className="px-[64px]">
-            <h2 className="text-white text-[48px] font-sans font-bold leading-normal">
+      <div className="bg-[#211F3B] flex-row flex justify-center items-center gap-[64px] py-[64px] max-sm:py-[16px] px-[32px]">
+        <div className="flex justify-start items-center w-[1440px] max-sm:flex-col flex-row">
+          <img
+            src="/assets/images/image-about.png"
+            alt=""
+            className="transition-transform duration-300 transform hover:scale-110"
+          />
+          <div className="px-[64px] max-sm:px-0">
+            <h2 className="text-white text-[48px] font-sans font-bold leading-normal max-sm:text-[32px]">
               What We Actually Do
             </h2>
             <div className="flex justify-start gap-[16px] py-[32px]">
@@ -58,7 +64,7 @@ const AboutUs = () => {
             <h4 className="text-[24px] text-white font-sans leading-[120%] font-semibold pb-[16px]">
               Full stack website development sevices
             </h4>
-            <p className="font-sans text-[16px] text-white leading-[150%] max-w-[540px] pb-[64px]">
+            <p className="font-sans text-[16px] text-white leading-[150%]  max-sm:w-full w-[540px] pb-[64px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet esse
               deleniti beatae odio qui obcaecati fugiat repudiandae consequuntur
               ex iure! Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -85,11 +91,10 @@ const AboutUs = () => {
           </h2>
         </div>
         <div>
-          {/* === BOARD OF DIRECTORS */}
           <div className="my-[16px]">
             {/* === MANAGEMENT TEAM === */}
             <div className="flex justify-center items-center mt-[32px]">
-              <div className="grid  grid-cols-4 px-[32px] gap-[32px]">
+              <div className="grid  grid-cols-4 gap-[32px] max-sm:grid-cols-1 max-md:grid-cols-2">
                 <div className="border-2 border-gray-300 max-w-[350px] rounded-[12px] shadow-lg transition duration-500 ease-in-out transform hover:scale-105">
                   <img
                     src="/assets/images/profile.jpg"
@@ -174,38 +179,38 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center px-[32px] mt-[64px]">
-          <div className="flex justify-between items-center  bg-gradient-to-r from-[#46DBFC] to-[#664DB5]  py-[78px] p-[32px] gap-[32px] w-[1490px]">
-            <div className="text-center px-[32px]">
-              <h1 className="text-white text-[56px] font-sans font-black">
+        <div className="flex items-center justify-center px-[32px] mt-[64px] max-sm:px-0">
+          <div className="grid grid-cols-4 max-md:grid-cols-2  bg-gradient-to-r from-[#46DBFC] to-[#664DB5]  py-[78px] p-[32px] gap-[32px] max-sm:gap-[16px] max-sm:px-0 w-[1490px]">
+            <div className="text-center px-[32px] max-sm:px-2">
+              <h1 className="text-white text-[56px] font-sans font-black max-sm:text-[32px]">
                 <CountUp start={0} end={200} delay={1} duration={5} />+
               </h1>
-              <h2 className="text-white text-[20px] font-sans font-bold">
+              <h2 className="text-white text-[20px] font-sans font-bold max:sm:text-[16px]">
                 ACTIVE CLIENTS
               </h2>
             </div>
-            <div className="text-center px-[32px]">
-              <h1 className="text-white text-[56px] font-sans font-black">
+            <div className="text-center px-[32px] max-sm:px-2">
+              <h1 className="text-white text-[56px] font-sans font-black max-sm:text-[32px]">
                 <CountUp start={0} end={10} delay={1} duration={5} />+
               </h1>
-              <h2 className="text-white text-[20px] font-sans font-bold">
+              <h2 className="text-white text-[20px] font-sans font-bold max:sm:text-[16px]">
                 UNDER DEVELOPMENT
               </h2>
             </div>
-            <div className="text-center px-[32px]">
-              <h1 className="text-white text-[56px] font-sans font-black">
+            <div className="text-center px-[32px] max-sm:px-2">
+              <h1 className="text-white text-[56px] font-sans font-black max-sm:text-[32px]">
                 <CountUp start={0} end={20} delay={1} duration={5} />+
               </h1>
-              <h2 className="text-white text-[20px] font-sans font-bold">
+              <h2 className="text-white text-[20px] font-sans font-bold max:sm:text-[16px]">
                 UNDER SUPPORT
               </h2>
             </div>
-            <div className="text-center px-[32px] ">
-              <h1 className="text-white text-[56px] font-sans font-black">
+            <div className="text-center px-[32px] max-sm:px-2">
+              <h1 className="text-white text-[56px] font-sans font-black max-sm:text-[32px]">
                 <CountUp start={0} end={20} delay={1} duration={5} />
                 M+
               </h1>
-              <h2 className="text-white text-[20px] font-sans font-bold">
+              <h2 className="text-white text-[20px] font-sans font-bold max:sm:text-[16px]">
                 REVENUES
               </h2>
             </div>
