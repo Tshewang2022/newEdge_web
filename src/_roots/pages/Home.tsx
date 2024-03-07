@@ -238,7 +238,7 @@ const Home = () => {
           </h1>
           <div className="flex justify-center items-center  ">
             <div className="flex justify-center flex-row items-center gap-[32px] py-[32px] max-sm:flex-col">
-              <div className="bg-white shadow-lg p-[36px] rounded-md  transition duration-300 ease-in-out">
+              <div className="bg-white shadow-lg p-[36px] rounded-md  transition duration-300 ease-in-out hover:bg-[#ade8f4]">
                 <div className="flex justify-start items-center gap-[32px] ">
                   <img
                     src="/assets/images/profile.jpg"
@@ -260,7 +260,7 @@ const Home = () => {
                   magni at dolorem blanditiis ex!"
                 </p>
               </div>
-              <div className="bg-white shadow-lg p-[36px] rounded-md  transition duration-300 ease-in-out">
+              <div className="bg-white shadow-lg p-[36px] rounded-md  transition duration-300 ease-in-out hover:bg-[#ade8f4]">
                 <div className="flex justify-start items-center gap-[32px]">
                   <img
                     src="/assets/images/profile.jpg"
