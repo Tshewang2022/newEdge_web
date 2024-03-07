@@ -13,11 +13,11 @@ const OurServices = () => {
         style={{ backgroundImage: `url('/assets/images/servicebg.jpg')` }}
       >
         <div className="flex justify-center items-center w-[1440px]">
-          <div className="w-1/2">
-            <h1 className="text-[76px] leading-normal text-white font-sans font-black">
+          <div className="w-1/2 max-md:px-[16px]">
+            <h1 className="text-[76px] leading-normal text-white font-sans font-black max-md:text-[48px]">
               Our Services
             </h1>
-            <p className="text-white pb-[32px] font-sans py-[32px]">
+            <p className="text-white pb-[32px] font-sans py-[32px] max-md:py-[16px] ">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Deserunt, delectus.
               <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -31,7 +31,7 @@ const OurServices = () => {
               Learn more
             </Button>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 max-sm:hidden">
             <img src="/assets/images/ourservices.png" alt="ourservices" />
           </div>
         </div>
@@ -39,12 +39,12 @@ const OurServices = () => {
       <div>
         {/* === OUR SERVICES === */}
         <div className="flex justify-center items-center">
-          <h2 className="text-[32px] font-medium leading-normal mt-[32px] mb-[16px] font-roboto ">
+          <h2 className="text-[32px] font-bold leading-normal mt-[32px] mb-[16px] font-roboto ">
             Services
           </h2>
         </div>
         <div className="flex justify-center items-center pb-[64px]">
-          <div className="grid grid-cols-3 max-w-[1440px] h-[640px] gap-[32px]  ">
+          <div className="grid grid-cols-3 max-w-[1440px] h-[640px] gap-[32px] max-sm:grid-cols-1 max-lg:grid-cols-2 px-[32px] ">
             <div className="p-[32px]  text-center border-2 border-gray-300 hover:bg-[#ade8f4] transition duration-500 ease-in-out">
               <div className="items-center flex justify-center">
                 <MdComputer className="w-[68px] h-[68px]" color="blue" />
@@ -134,8 +134,8 @@ const OurServices = () => {
             </h2>
           </div>
           <div className="flex justify-center items-center">
-            <div className="justify-center items-center flex max-w-[1440px]">
-              <div className="text-[16px] font-medium w-1/2 max-md:flex">
+            <div className="justify-center items-center flex w-[1440px]">
+              <div className="text-[16px] font-medium">
                 <div className="items-center px-[16px] py-[16px] bg-blue-200 mb-[32px] w-full shadow-lg hover:bg-[#ade8f4] transition duration-300 ease-in-out">
                   <h2 className="">Networking</h2>
                 </div>
@@ -158,7 +158,9 @@ const OurServices = () => {
                     iste perferendis nam impedit cum architecto, sunt inventore
                     nulla aspernatur dolorum, quaerat aliquid. Harum, adipisci.
                   </p>
-                  <Button className="shadow-lg bg-[#0077b6] hover:bg-[#2a9d8f]">Learn more</Button>
+                  <Button className="shadow-lg bg-[#0077b6] hover:bg-[#2a9d8f]">
+                    Learn more
+                  </Button>
                 </div>
               </div>
             </div>
