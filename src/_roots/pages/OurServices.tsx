@@ -14,10 +14,10 @@ const OurServices = () => {
       >
         <div className="flex justify-center items-center w-[1440px]">
           <div className="w-1/2 max-md:px-[16px]">
-            <h1 className="text-[76px] leading-normal text-white font-sans font-black max-md:text-[48px]">
+            <h1 className="text-[56px] leading-normal text-white font-roboto font-black max-md:text-[48px]">
               Our Services
             </h1>
-            <p className="text-white pb-[32px] font-sans py-[32px] max-md:py-[16px] ">
+            <p className="text-white pb-[32px] font-sans py-[32px] max-md:py-[16px] max-sm:line-clamp-6">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Deserunt, delectus.
               <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -135,7 +135,7 @@ const OurServices = () => {
           </div>
           <div className="flex justify-center items-center">
             <div className="justify-center items-center flex w-[1440px]">
-              <div className="text-[16px] font-medium">
+              <div className="text-[16px] font-medium w-1/2">
                 <div className="items-center px-[16px] py-[16px] bg-blue-200 mb-[32px] w-full shadow-lg hover:bg-[#ade8f4] transition duration-300 ease-in-out">
                   <h2 className="">Networking</h2>
                 </div>
@@ -149,7 +149,7 @@ const OurServices = () => {
                   <h2 className="py-[16px] ">Server & Storage</h2>
                 </div>
               </div>
-              <div className="flex justify-center items-center w-1/2 ">
+              <div className="flex justify-center items-center w-1/2  max-md:hidden">
                 <div className="px-[32px]">
                   <img src="/assets/images/ux.png" alt="" />
                   <p>
